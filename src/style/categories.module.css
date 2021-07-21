@@ -1,0 +1,298 @@
+.backCategories {
+    background-image: url("/src/img/imgCategories/image 64.svg");
+    background-color: #EBEBEB;
+}
+/*.textConsultation{*/
+/*    font-size: 1rem;*/
+/*}*/
+.h2Text{
+    font-size: 2.8rem;
+}
+.h2TextConsultation{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.imgSofa {
+    position: relative;
+}
+
+.textSofa {
+    position: absolute;
+    top: 19%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+
+}
+
+.textCupboard {
+    position: absolute;
+    top: 68%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+}
+
+.textBanquet {
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+
+}
+
+.imgCupboard {
+    position: relative;
+}
+
+.textTable {
+    position: absolute;
+    top: 31%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+}
+
+.textKitchen {
+    position: absolute;
+    top: 56%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+}
+
+.textChairs {
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+}
+.buttonConsultation{
+    width: 306px;
+    height: 50px;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    background: none;
+    font-weight: 400;
+}
+@media (min-width: 552px) and (max-width: 1000px) {
+    .backCategories {
+        background-image: none;
+        background-color: #EBEBEB;
+    }
+    .imgSofa {
+        position: relative;
+    }
+
+    .textSofa {
+        position: absolute;
+        top: 18%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+
+    }
+
+    .textCupboard {
+        position: absolute;
+        top: 64%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+    }
+
+    .textBanquet {
+        position: absolute;
+        top: 89%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+
+    }
+
+    .imgCupboard {
+        position: relative;
+    }
+
+    .textTable {
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+    }
+
+    .textKitchen {
+        position: absolute;
+        top: 54%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+    }
+
+    .textChairs {
+        position: absolute;
+        top: 89%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+    }
+    .buttonConsultation{
+        padding: 4px 0 4px 0;
+        width: 206px;
+        height: 40px;
+        font-size: 0.7rem;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        background: none;
+        color: white;
+        background: #242424;
+        font-weight: 400;
+    }
+    .h2TextConsultation{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+}
+@media (max-width: 551px){
+
+    .h2Text{
+        font-size: 1.9rem;
+    }
+    .backCategories {
+        background-image: none;
+        background-color: #EBEBEB;
+    }
+    .imgSofa {
+        position: relative;
+    }
+
+    .textSofa {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 10%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+
+    }
+
+    .textCupboard {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 42%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+    }
+
+    .textBanquet {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 60%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+
+    }
+
+    .imgCupboard {
+        position: relative;
+    }
+
+    .textTable {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 93%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+
+        font-size: 0.7rem;
+    }
+    .textBed{
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 94%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+
+        font-size: 0.7rem;
+    }
+
+    .textKitchen {
+        position: absolute;
+        padding: 4px 0 4px 0;
+        top: 77%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+    }
+
+    .textChairs {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 68%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+    }
+    .textChair {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 42%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+    }
+    .textCommode {
+        padding: 4px 0 4px 0;
+        position: absolute;
+        top: 17%;
+        left: 13%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 0.7rem;
+    }
+    .buttonConsultation{
+        padding: 4px 0 4px 0;
+        width: 162px;
+        height: 30px;
+        font-size: 0.6rem;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        background: none;
+        color: white;
+        background: #242424;
+    }
+    .h2TextConsultation{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .textConsultation{
+        font-size: 0.8rem;
+    }
+
+
+}

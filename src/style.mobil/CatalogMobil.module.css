@@ -1,0 +1,59 @@
+.btnCata1{
+    all: unset;
+    text-align: center;
+
+    width: 162px;
+    height: 30px;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 0.7rem;
+
+}
+.ptext{
+    font-size: 0.9rem;
+}
+.btnCata2{
+    all: unset;
+    text-align: center;
+    text-transform: uppercase;
+    width: 162px;
+    height: 30px;
+    color: white;
+    font-weight: 400;
+    font-size: 0.7rem;
+    background: #4C4C4C;
+}
+
+.ptextTablet{
+    font-size: 1rem;
+}
+.btnTablet1{
+    all: unset;
+    text-align: center;
+
+    width: 205px;
+    height: 40px;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 0.8rem;
+
+}
+.btnTablet2{
+    all: unset;
+    text-align: center;
+    text-transform: uppercase;
+    width: 205px;
+    height: 40px;
+    color: white;
+    font-weight: 400;
+    font-size: 0.8rem;
+    background: #4C4C4C;
+}
+.h3Tablet{
+    font-weight: 400;
+    font-size: 2rem;
+}

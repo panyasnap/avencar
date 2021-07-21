@@ -1,0 +1,105 @@
+
+
+
+.textMain {
+    /*width: 70%;*/
+    /*height: 40%;*/
+    text-align: left;
+
+
+}
+
+.ptext {
+
+    font-family: 'Gilroy Ultra Light', sans-serif;
+    color: white;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    padding: 5px 0 0 0;
+}
+
+.h3text {
+
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    /*background: rgba(0, 0, 0, 0.5);*/
+    text-transform: uppercase;
+
+}
+.pspan{
+    padding-bottom: 6px;
+}
+span{
+    padding: 0 20px 0 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 120%;
+}
+
+
+
+.buttonCarusel {
+    all: unset;
+    text-align: center;
+    font-family: 'Gilroy Ultra Light', sans-serif;
+    text-transform: uppercase;
+
+    font-size: 0.8rem;
+    font-weight: normal;
+    width: 27%;
+    height: 2.9rem;
+    align-items: flex-start;
+    background: #242424;
+    color: #fff;
+}
+
+@media (min-width: 1900px){
+
+    .buttonCarusel {
+        all: unset;
+        text-align: center;
+        font-family: 'Gilroy Ultra Light', sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: normal;
+        width: 306px;
+        height: 50px;
+        align-items: flex-start;
+        background: #242424;
+        color: #fff;
+    }
+    .pspan{
+        padding-bottom:10px;
+    }
+    .ptext {
+
+        font-family: 'Gilroy Ultra Light', sans-serif;
+        color: white;
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        /*background: rgba(0, 0, 0, 0.5);*/
+        padding: 5px 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .h3text {
+
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        text-align: left;
+        font-weight: bold;
+        /*background: rgba(0, 0, 0, 0.5);*/
+        text-transform: uppercase;
+        font-size: 2.5rem;
+
+    }
+    span{
+        padding: 0 25px 0 25px;
+        background: rgba(0, 0, 0, 0.5);
+        width: 120%;
+    }
+}

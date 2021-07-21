@@ -1,0 +1,93 @@
+.backCata{
+    background: #E5E5E5;
+}
+.btnCata1{
+
+    width: 196px;
+    height: 50px;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+.btnCata2   {
+    text-transform: uppercase;
+    width: 196px;
+    height: 50px;
+    color: white;
+
+
+    background: #4C4C4C;
+}
+.h3textCata{
+   font-size: 2rem
+}
+.ptextCata{
+   font-size: 1rem;
+    margin-top: -6px;
+}
+
+@media (max-width: 1299px) {
+    .h3textCata{
+        font-size: 1.4rem
+    }
+    .ptextCata{
+        font-size: 0.7rem;
+
+    }
+    .btnCata1{
+
+        width: 100px;
+        height: 35px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: white;
+        font-size: 0.8rem;
+        margin-top: -10px;
+
+    }
+    .btnCata2{
+        text-transform: uppercase;
+
+        width: 100px;
+        height: 35px;
+        color: white;
+        font-size: 0.8rem;
+        background: #4C4C4C;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 1421px ) and  (min-width: 1298px){
+    .h3textCata{
+        font-size: 1.8rem
+    }
+    .ptextCata{
+        font-size: 1rem;
+
+    }
+    .btnCata1{
+
+        width: 200px;
+        height: 45px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: white;
+        font-size: 1rem;
+
+
+    }
+    .btnCata2{
+        text-transform: uppercase;
+
+        width: 200px;
+        height: 45px;
+        color: white;
+        font-size: 1rem;
+        background: #4C4C4C;
+
+    }
+}

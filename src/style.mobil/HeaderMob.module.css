@@ -1,0 +1,43 @@
+.headerBack{
+    height: 69px;
+    background: #4C4C4C;
+}
+.headerBurger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    margin-left: 27px;
+    /*margin-top: 16px;*/
+    background: none;
+}
+.headerBurger:before,
+.headerBurger:after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 5;
+}
+
+.headerBurger:before {
+    top: 0
+}
+
+.headerBurger:after {
+    bottom: 0;
+
+}
+.headerBurger span {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2.5px;
+    left: 0;
+    top: 10px;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+}

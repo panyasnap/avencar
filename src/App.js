@@ -1,25 +1,61 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./components/header";
+import Catalog from "./components/Catalog";
+import Carusel from "./components/Carusel";
+import Categories from "./components/Categories";
+import PopularGoods from "./components/PopularGoods";
+import Consultation from "./components/Consultation";
+import LastWorks from "./components/LastWorks";
+import Footer from "./components/Footer";
+import HeaderMobil from "./components/mobil/HeaderMobil";
+import CaruselMob from "./components/mobil/CaruselMob";
+import {useEffect, useState} from "react";
+import {context} from './components/utils/context'
+
+import CatalogMob from "./components/mobil/CatalogMob";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
+    return (
+        <context.Provider value={
+            {
+                windowWidth
+            }
+        }>
+            <div className="App">
+                {windowWidth < 1024 ?
+                    <div>
+                        <HeaderMobil/>
+                        <CaruselMob/>
+                        <CatalogMob/></div>
+                    : <div>
+                        <Header/>
+                        <Carusel/>
+                        <Catalog/>
+
+                    </div>}
+                <Categories/>
+                <PopularGoods/>
+                <Consultation/>
+                <LastWorks/>
+                <Footer/>
+
+            </div>
+        </context.Provider>
+    );
 }
 
 export default App;
