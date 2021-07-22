@@ -1,5 +1,11 @@
-
-.buttonCarusel {
+span{
+    padding: 0px 20px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    width: 120%;
+    line-height: 1;
+}
+.buttonCaruselMob {
     all: unset;
     text-align: center;
     font-family: 'Gilroy Ultra Light', sans-serif;
@@ -13,10 +19,11 @@
     color: #fff;
     margin-bottom: 11px;
 }
-.pspan{
+.pspanMob{
     padding-bottom:4px;
+
 }
-.ptext {
+.ptextMob {
 
     font-family: 'Gilroy Ultra Light', sans-serif;
     color: white;
@@ -28,7 +35,7 @@
     font-size: 0.7rem;
 }
 
-.h3text {
+.h3textMob {
 
     font-family: 'Cormorant Garamond', serif;
     color: white;
@@ -38,9 +45,10 @@
     text-transform: uppercase;
     font-size: 1rem;
     padding-top: 3rem;
+
 }
-@media (max-width: 365px){
-    .buttonCarusel {
+@media (max-width: 365px) {
+    .buttonCaruselMob {
         all: unset;
         font-family: 'Gilroy Ultra Light', sans-serif;
         text-transform: uppercase;
@@ -56,10 +64,10 @@
         color: #fff;
         margin-bottom: 11px;
     }
-    .pspan{
-        padding-bottom:4px;
+    .pspanMob{
+        padding-bottom:3.2px;
     }
-    .ptext {
+    .ptextMob {
 
         font-family: 'Gilroy Ultra Light', sans-serif;
         color: white;
@@ -71,7 +79,7 @@
         font-size: 0.6rem;
     }
 
-    .h3text {
+    .h3textMob {
 
         font-family: 'Cormorant Garamond', serif;
         color: white;
@@ -82,10 +90,17 @@
         font-size: 0.8rem;
         padding-top: 1rem;
     }
+    span{
+        padding: 0px 20px 0px 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 1;
+    }
 }
 
-@media (min-width: 767px){
-    .buttonCarusel {
+@media (min-width: 767px ) {
+    .buttonCaruselMob {
         all: unset;
         text-align: center;
         font-family: 'Gilroy Ultra Light', sans-serif;
@@ -100,10 +115,10 @@
         color: #fff;
         margin-bottom: 11px;
     }
-    .pspan{
+    .pspanMob{
         padding-bottom:0.9px;
     }
-    .ptext {
+    .ptextMob {
 
         font-family: 'Gilroy Ultra Light', sans-serif;
         color: white;
@@ -116,7 +131,7 @@
 
     }
 
-    .h3text {
+    .h3textMob {
 
         font-family: 'Cormorant Garamond', serif;
         color: white;
@@ -128,7 +143,7 @@
         padding-top: 17rem;
 
     }
-    span{
+    .spanMob{
         padding: 8px 20px 8px 20px;
         background-color: rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;

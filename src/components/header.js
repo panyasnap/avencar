@@ -70,8 +70,8 @@ const Header = () => {
                     <div>
 
                         <select className={showInput ?`${style.selectDark}`: null} onChange={handleChange}>
-                            <option value='Msk'>Москва</option>
-                            <option value='spb'>Санкт-Петербург</option>
+                            <option className='p-3' value='Msk'>Москва</option>
+                            <option className='p-3' value='spb'>Санкт-Петербург</option>
                         </select>
                         {!spb ?
                             <div>+7 926 603 58 79</div> :

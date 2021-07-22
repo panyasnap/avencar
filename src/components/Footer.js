@@ -41,10 +41,10 @@ const Footer = () => {
                                         (по предварительной записи)
                                     </p>
                                     <div className='row'>
-                                        <img className='m-2' src={insta} alt='inst'/>
-                                        <img className='m-2' src={vk} alt='vk'/>
-                                        <img className='m-2' src={fb} alt='fb'/>
-                                        <img className='m-2' src={pin} alt='pin'/>
+                                        <img className='m-1 ml-3' src={insta} alt='inst'/>
+                                        <img className='m-1' src={vk} alt='vk'/>
+                                        <img className='m-1' src={fb} alt='fb'/>
+                                        <img className='m-1' src={pin} alt='pin'/>
                                     </div>
                                 </div>
 

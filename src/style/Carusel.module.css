@@ -37,6 +37,7 @@ span{
     padding: 0 20px 0 20px;
     background: rgba(0, 0, 0, 0.5);
     width: 120%;
+    line-height: 1.7;
 }
 
 
@@ -74,6 +75,7 @@ span{
     .pspan{
         padding-bottom:10px;
     }
+
     .ptext {
 
         font-family: 'Gilroy Ultra Light', sans-serif;
@@ -97,9 +99,11 @@ span{
         font-size: 2.5rem;
 
     }
+
     span{
-        padding: 0 25px 0 25px;
+        padding: 0 20px 0 20px;
         background: rgba(0, 0, 0, 0.5);
         width: 120%;
+        /*line-height: 1.7;*/
     }
 }
