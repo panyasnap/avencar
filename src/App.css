@@ -1,22 +1,16 @@
-p{
-    font-family: 'Gilroy Ultra Light', serif;
-    font-weight: 600;
-}
-.pWeigth {
-    font-weight: 400;
 
-}
+
 .pBold{
 
-    font-weight: 600;
+
 }
 h3{
     font-family: 'Cormorant Garamond', serif;
-    font-weight: bold;
+
 }
 h2{
     font-family: 'Cormorant Garamond', serif;
-    font-weight: bolder;
+
 
 }
 .carouselStyle .carousel-indicators {
@@ -45,3 +39,5 @@ h2{
 .carouselStyle .carousel-control-prev, .carousel-control-next {
     opacity: 90;
 }
+
+

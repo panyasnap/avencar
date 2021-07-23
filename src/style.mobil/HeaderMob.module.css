@@ -5,8 +5,8 @@
 .headerBurger {
     display: block;
     position: relative;
-    width: 30px;
-    height: 21px;
+    width: 24.06px;
+    height: 21.2px;
     margin-left: 27px;
     /*margin-top: 16px;*/
     background: none;
@@ -17,7 +17,7 @@
     background-color: white;
     position: absolute;
     width: 100%;
-    height: 2.5px;
+    height: 2.19px;
     left: 0;
     transition: all 0.3s ease 0s;
     z-index: 5;
@@ -35,7 +35,7 @@
     position: absolute;
     background-color: white;
     width: 100%;
-    height: 2.5px;
+    height: 2.19px;
     left: 0;
     top: 10px;
     padding: 0;

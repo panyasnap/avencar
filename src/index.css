@@ -11,3 +11,21 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url('components/utils/fonts/Gilroy-Medium.eot');
+    src: url('components/utils/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('components/utils/fonts/Gilroy-Medium.woff') format('woff'),
+    url('components/utils/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('components/utils/fonts/Gilroy-Regular.eot');
+    src: url('components/utils/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('components/utils/fonts/Gilroy-Regular.woff') format('woff'),
+    url('components/utils/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

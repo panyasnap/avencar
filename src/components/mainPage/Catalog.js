@@ -1,10 +1,10 @@
 import React from 'react';
-import sofa from '../img/imgCata/Rectangle (2).png';
-import sofa1 from '../img/imgCata/Rectangle.png';
-import sofa2 from '../img/imgCata/Rectangle (1).png';
-import style from '../style/cata.module.css';
-import chair from '../img/imgCata/Rectangle1.png';
-import chairs from '../img/imgCata/Rest2.png';
+import sofa from '../../img/imgCata/Rectangle (2).png';
+import sofa1 from '../../img/imgCata/Rectangle.png';
+import sofa2 from '../../img/imgCata/Rectangle (1).png';
+import style from '../../style/cata.module.css';
+import chair from '../../img/imgCata/Rectangle1.png';
+import chairs from '../../img/imgCata/Rest2.png';
 
 const Catalog = () => {
     return (
@@ -37,8 +37,7 @@ const Catalog = () => {
             <div className='row'>
                 <div className='col-5'>
                     <div className='row'>
-
-                        <img className='col-7 p-0' src={chair} alt='chair'/>
+                        <img className='col-7 p-0 ' src={chair} alt='chair'/>
 
                         <div className='col-5 d-flex justify-content-center flex-column'>
                             <h3 className={`${style.h3textCata}`}>Исторические копии</h3>

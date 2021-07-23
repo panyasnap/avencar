@@ -12,6 +12,8 @@
 }
 
 .btnCata2   {
+    all: unset;
+    text-align: center;
     text-transform: uppercase;
     width: 196px;
     height: 50px;
@@ -21,7 +23,7 @@
     background: #4C4C4C;
 }
 .h3textCata{
-   font-size: 2rem
+   font-size: 2.188rem
 }
 .ptextCata{
    font-size: 1rem;
@@ -30,10 +32,10 @@
 
 @media (max-width: 1299px) {
     .h3textCata{
-        font-size: 1.4rem
+        font-size: 1.5rem
     }
     .ptextCata{
-        font-size: 0.7rem;
+        font-size: 0.8rem;
 
     }
     .btnCata1{

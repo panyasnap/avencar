@@ -1,22 +1,25 @@
-.headerBack{
+.headerBack {
     height: 122px;
     background-color: #4C4C4C;
     color: white;
     text-transform: uppercase;
-    font-family: 'Gilroy Ultra Light', serif;
-    font-size: 90%;
-
+    font-family: 'Gilroy Regular', serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
-.headerInputBack{
+
+.headerInputBack {
     color: #4C4C4C;
     height: 122px;
     background: #2E2E2E;
     /*opacity: 0.8;*/
     text-transform: uppercase;
-    font-family: 'Gilroy Ultra Light', serif;
-    font-size: 90%;
+    font-family: 'Gilroy Regular', serif;
+    font-weight: 400;
+    font-size: 0.875rem;
 }
-.inputHeader{
+
+.inputHeader {
     background-color: #4C4C4C;
     border-color: white;
 
@@ -24,46 +27,64 @@
     border-left: 0;
     border-right: 0;
 }
-@media (max-width: 1299px){
-    .headerBack{
+
+@media (max-width: 1299px) {
+    .headerBack {
         height: 122px;
         background-color: #4C4C4C;
         color: white;
         text-transform: uppercase;
-        font-family: 'Gilroy Ultra Light', serif;
+        font-family: 'Gilroy Regular', serif;
+        font-weight: 400;
         font-size: 80%;
 
     }
 }
-.imgInput{
+
+.imgInput {
     height: 1.7rem;
     cursor: pointer;
 }
-.imgSize{
+
+.imgSize {
     height: 6rem;
 
 }
-.imgDark{
+
+.imgDark {
     position: relative;
 }
-.divDark{
+
+.divDark {
     position: absolute;
     height: 100px;
     width: 150px;
     background-color: #2E2E2E;
     opacity: 0.8;
 }
-.selectDark{
+
+.selectLine {
+    text-decoration-line: underline;
+    /*text-decoration-thickness: 1px;*/
+
+}
+
+.selectDark {
     background-color: #2E2E2E;
     color: #4C4C4C;
 }
-select{
+
+select {
     cursor: pointer;
     background-color: #4C4C4C;
     color: white;
     border: #4C4C4C;
     text-decoration-line: underline;
 }
-.displayDiv{
+
+.displayDiv {
     display: none;
+}
+.linkStyle{
+    color: white;
 }

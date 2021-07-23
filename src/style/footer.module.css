@@ -1,46 +1,102 @@
-.footerBack{
+.footerBack {
 
-    background-color:#242424;
+    background-color: #242424;
 
     color: white;
 
-    font-family: 'Gilroy Ultra Light', serif;
+    font-family: 'Gilroy Medium', serif;
     font-size: 90%;
 
 }
-.textHelp{
-    font-weight: 250;
-    font-size: 0.7rem;
 
-}
-.textH2{
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-   border-color: white;
-    border-bottom: 1px;
-    font-size: 0.85rem;
-}
-.textServices{
-    text-transform: uppercase;
-    font-weight: 600;
+.textHelp {
+    font-family: 'Gilroy Ultra Light', sans-serif;
+    font-style: normal;
+    font-size: 0.75rem;
 
-
-}
-.line23{
     font-weight: normal;
 }
-.textPhone{
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
+.textHelpBottom{
+    font-family: 'Gilroy Ultra Light', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.75rem;
+}
+
+.textH2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-style: normal;
+    border-color: white;
+    border-bottom: 1px;
+    font-size: 0.875rem;
+}
+
+.textServices {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    font-family: "Gilroy Regular", serif;
+    line-height: 147%;
+
+
 
 }
-.textInfo{
+
+.line23 {
+    font-weight: normal;
+}
+
+.textPhoneRing {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 1rem;
+
+}
+.textAddressBold{
+    background: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.textAddress{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.textPhone{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+}
+.textInfoPhone{
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.textInfo {
     /*font-weight: 800;*/
-    font-weight: 600;
+    font-weight: 500;
+
+    font-size: 1rem;
     cursor: pointer;
     background: none;
 }
+.textInfo:hover {
+    /*font-weight: 800;*/
+    font-weight: 500;
+
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    text-decoration: underline;
+}
+
 hr {
 
     border: none; /* Убираем границу */
@@ -50,16 +106,27 @@ hr {
     justify-items: left;
 
 }
-.imgLogo{
+
+.imgLogo {
     height: 137px;
 
 }
-.marginServices{
+
+.marginServices {
     margin-top: 0;
 }
+
 @media (max-width: 1199px) {
-    .marginServices{
-        margin-top: 16px;
-        padding-top: 16px;
+    .marginServices {
+        /*margin-top: 16px;*/
+        padding-top: 20px;
+    }
+    .textH2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 500;
+        font-style: normal;
+        border-color: white;
+        border-bottom: 1px;
+        font-size: 0.7rem;
     }
 }

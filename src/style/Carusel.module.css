@@ -11,8 +11,9 @@
 
 .ptext {
 
-    font-family: 'Gilroy Ultra Light', sans-serif;
+    font-family: 'Gilroy Regular', sans-serif;
     color: white;
+    font-size: 1.25rem;
     text-align: left;
     font-style: normal;
     font-weight: normal;
@@ -25,16 +26,17 @@
     font-family: 'Cormorant Garamond', serif;
     color: white;
     text-align: left;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 2.188rem;
     /*background: rgba(0, 0, 0, 0.5);*/
     text-transform: uppercase;
 
 }
 .pspan{
-    padding-bottom: 6px;
+    padding-bottom: 0px;
 }
 span{
-    padding: 0 20px 0 20px;
+    padding: 10px 20px 7px 20px;
     background: rgba(0, 0, 0, 0.5);
     width: 120%;
     line-height: 1.7;
@@ -45,16 +47,51 @@ span{
 .buttonCarusel {
     all: unset;
     text-align: center;
-    font-family: 'Gilroy Ultra Light', sans-serif;
+    font-family: 'Gilroy Regular', sans-serif;
     text-transform: uppercase;
 
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: normal;
-    width: 27%;
-    height: 2.9rem;
+    width: 19.125rem;
+    height: 3.125rem;
     align-items: flex-start;
     background: #242424;
     color: #fff;
+}
+@media (min-width: 1023px) and (max-width: 1120px){
+
+    .ptext {
+
+        font-family: 'Gilroy Regular', sans-serif;
+        color: white;
+        font-size: 1rem;
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        /*background: rgba(0, 0, 0, 0.5);*/
+        padding: 5px 0 0 0;
+    }
+
+    .h3text {
+
+        font-family: 'Cormorant Garamond', serif;
+        color: white;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2rem;
+        /*background: rgba(0, 0, 0, 0.5);*/
+        text-transform: uppercase;
+
+    }
+    .pspan{
+        padding-bottom: 1px;
+    }
+    span{
+        padding: 6px 20px 7px 20px;
+        background: rgba(0, 0, 0, 0.5);
+        width: 120%;
+        line-height: 1.6;
+    }
 }
 
 @media (min-width: 1900px){
@@ -62,7 +99,7 @@ span{
     .buttonCarusel {
         all: unset;
         text-align: center;
-        font-family: 'Gilroy Ultra Light', sans-serif;
+        font-family: 'Gilroy Regular', sans-serif;
         text-transform: uppercase;
         font-size: 1rem;
         font-weight: normal;
@@ -73,19 +110,20 @@ span{
         color: #fff;
     }
     .pspan{
-        padding-bottom:10px;
+        padding-bottom:2px;
+
     }
 
     .ptext {
 
-        font-family: 'Gilroy Ultra Light', sans-serif;
+        font-family: 'Gilroy Regular', sans-serif;
         color: white;
         text-align: left;
         font-style: normal;
         font-weight: normal;
         /*background: rgba(0, 0, 0, 0.5);*/
         padding: 5px 0 0 0;
-        font-size: 1.5rem;
+        font-size:  1.25rem;
     }
 
     .h3text {
@@ -93,17 +131,17 @@ span{
         font-family: 'Cormorant Garamond', serif;
         color: white;
         text-align: left;
-        font-weight: bold;
+        font-weight: 700;
         /*background: rgba(0, 0, 0, 0.5);*/
         text-transform: uppercase;
-        font-size: 2.5rem;
+        font-size: 2.188rem;
 
     }
 
     span{
-        padding: 0 20px 0 20px;
+        padding:8.77px 20px 8.83px 20px;
         background: rgba(0, 0, 0, 0.5);
         width: 120%;
-        /*line-height: 1.7;*/
+        line-height: 1.7;
     }
 }

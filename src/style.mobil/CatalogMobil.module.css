@@ -1,4 +1,4 @@
-.btnCata1{
+.btnCata1 {
     all: unset;
     text-align: center;
 
@@ -11,10 +11,22 @@
     font-size: 0.7rem;
 
 }
-.ptext{
-    font-size: 0.9rem;
+
+.h3text {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
 }
-.btnCata2{
+
+.ptext {
+
+    font-family: 'Gilroy Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.btnCata2 {
     all: unset;
     text-align: center;
     text-transform: uppercase;
@@ -26,10 +38,12 @@
     background: #4C4C4C;
 }
 
-.ptextTablet{
-    font-size: 1rem;
+.ptextTablet {
+    font-family: 'Gilroy Regular', sans-serif;
+    font-size: 0.875rem;
 }
-.btnTablet1{
+
+.btnTablet1 {
     all: unset;
     text-align: center;
 
@@ -39,10 +53,11 @@
     box-sizing: border-box;
     text-transform: uppercase;
     background-color: white;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 
 }
-.btnTablet2{
+
+.btnTablet2 {
     all: unset;
     text-align: center;
     text-transform: uppercase;
@@ -50,10 +65,11 @@
     height: 40px;
     color: white;
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     background: #4C4C4C;
 }
-.h3Tablet{
+
+.h3Tablet {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.875rem;
 }

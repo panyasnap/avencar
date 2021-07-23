@@ -1,15 +1,15 @@
 import React, {useContext} from 'react';
-import style from '../style/categories.module.css'
-import commode from '../img/imgCategories/Rectangle 44.png';
-import bed from '../img/imgCategories/Rectangle 40.png';
-import armchair from '../img/imgCategories/Rectangle 47.png';
-import sofa from '../img/imgCategories/Rectangle 45.png';
-import cupboard from '../img/imgCategories/Rectangle 41.png';
-import banquet from '../img/imgCategories/Rectangle 49.png';
-import table from '../img/imgCategories/Rectangle 46.png';
-import kitchen from '../img/imgCategories/Rectangle 50.png';
-import chairs from '../img/imgCategories/Rectangle 48.png';
-import {context} from "./utils/context";
+import style from '../../style/categories.module.css'
+import commode from '../../img/imgCategories/Rectangle 44.png';
+import bed from '../../img/imgCategories/Rectangle 40.png';
+import armchair from '../../img/imgCategories/Rectangle 47.png';
+import sofa from '../../img/imgCategories/Rectangle 45.png';
+import cupboard from '../../img/imgCategories/Rectangle 41.png';
+import banquet from '../../img/imgCategories/Rectangle 49.png';
+import table from '../../img/imgCategories/Rectangle 46.png';
+import kitchen from '../../img/imgCategories/Rectangle 50.png';
+import chairs from '../../img/imgCategories/Rectangle 48.png';
+import {context} from "../utils/context";
 
 const Categories = () => {
     const {windowWidth} = useContext(context);
@@ -73,19 +73,18 @@ const Categories = () => {
                                 <img className={`${style.imgSofa} col-12 pr-2`} src={commode} alt='commode'/>
                                 <p className={`${style.textCommode} pl-4 pr-4`}>Комоды</p>
                             </div>
-                            <div className='mb-3'>
+                            <div className='mb-3 pt-1'>
                                 <img className={`${style.imgSofa} col-12 pr-2`} src={chairs} alt='chairs'/>
                                 <p className={`${style.textChair} pl-4 pr-4`}>Стулья</p>
                             </div>
-                            <div className='mb-3'>
+                            <div className='mb-3 '>
                                 <img className={`${style.imgSofa} col-12 pr-2`} src={armchair} alt='armchair'/>
                                 <p className={`${style.textChairs} pl-4 pr-4`}>Кресла</p>
                             </div>
-                            <div className='mb-3'>
+                            <div className='mb-3 pt-1'>
                                 <img className={`${style.imgSofa} col-12 pr-2`} src={table} alt='table'/>
-                                <p className={`${style.textTable} pl-4 pr-4`}>Столы</p>
+                                <p className={`${style.textTable} pl-4 pr-4 `}>Столы</p>
                             </div>
-
                         </div>
                         <div className='col-6 p-0 m-0'>
                             <div className='mb-3'>

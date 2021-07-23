@@ -5,11 +5,17 @@
 /*.textConsultation{*/
 /*    font-size: 1rem;*/
 /*}*/
+.textConsultation{
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: normal;
+}
 .h2Text{
-    font-size: 2.8rem;
+    font-size: 3.125rem;
+    font-weight: 500;
 }
 .h2TextConsultation{
-    font-size: 2.8rem;
+    font-size: 3.125rem;
     font-weight: bold;
 }
 .imgSofa {
@@ -17,31 +23,37 @@
 }
 
 .textSofa {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 19%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 
 }
 
 .textCupboard {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 68%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 
 .textBanquet {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 92%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 
 }
 
@@ -50,30 +62,36 @@
 }
 
 .textTable {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 31%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 
 .textKitchen {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 56%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 
 .textChairs {
+    font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 92%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    font-size: 1.7rem;
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 .buttonConsultation{
     width: 306px;
@@ -82,6 +100,80 @@
     text-transform: uppercase;
     background: none;
     font-weight: 400;
+    font-size: 1rem;
+}
+@media  (min-width: 1001px) and (max-width: 1200px)  {
+    .textSofa {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 19%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .textCupboard {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 68%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .textBanquet {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 92%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .imgCupboard {
+        position: relative;
+    }
+
+    .textTable {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 31%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .textKitchen {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 56%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .textChairs {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 92%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 }
 @media (min-width: 552px) and (max-width: 1000px) {
     .backCategories {
@@ -93,6 +185,7 @@
     }
 
     .textSofa {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 18%;
         left: 10%;
@@ -103,6 +196,7 @@
     }
 
     .textCupboard {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 64%;
         left: 10%;
@@ -112,6 +206,7 @@
     }
 
     .textBanquet {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 89%;
         left: 10%;
@@ -126,6 +221,7 @@
     }
 
     .textTable {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 28%;
         left: 10%;
@@ -135,6 +231,7 @@
     }
 
     .textKitchen {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 54%;
         left: 10%;
@@ -144,6 +241,7 @@
     }
 
     .textChairs {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         top: 89%;
         left: 10%;
@@ -155,7 +253,7 @@
         padding: 4px 0 4px 0;
         width: 206px;
         height: 40px;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
         border: 1px solid #000000;
         text-transform: uppercase;
         background: none;
@@ -167,49 +265,57 @@
         font-size: 2.5rem;
         font-weight: bold;
     }
+
+    .h2Text{
+        font-size: 2.5rem;
+    }
 }
 @media (max-width: 551px){
 
     .h2Text{
-        font-size: 1.9rem;
+        font-size: 1.875rem;
     }
     .backCategories {
         background-image: none;
         background-color: #EBEBEB;
     }
     .imgSofa {
+        font-family: "Gilroy Regular", sans-serif;
         position: relative;
     }
 
     .textSofa {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 10%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
 
     }
 
     .textCupboard {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 42%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
 
     .textBanquet {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
-        top: 60%;
+        top: 59%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
 
     }
 
@@ -218,6 +324,7 @@
     }
 
     .textTable {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 93%;
@@ -225,61 +332,67 @@
         color: white;
         background: rgba(0, 0, 0, 0.5);
 
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
     .textBed{
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
-        top: 94%;
+        top: 93%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
 
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
 
     .textKitchen {
+        font-family: "Gilroy Regular", sans-serif;
         position: absolute;
         padding: 4px 0 4px 0;
-        top: 77%;
+        top: 76%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
 
     .textChairs {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 68%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
     .textChair {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 42%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
     .textCommode {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
         top: 17%;
         left: 13%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
-        font-size: 0.7rem;
+        font-size: 0.688rem;
     }
     .buttonConsultation{
+        font-family:"Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         width: 162px;
         height: 30px;
-        font-size: 0.6rem;
+        font-size: 0.625rem;
         border: 1px solid #000000;
         text-transform: uppercase;
         background: none;
@@ -287,11 +400,20 @@
         background: #242424;
     }
     .h2TextConsultation{
-        font-size: 1.8rem;
+
+        font-style: normal;
         font-weight: bold;
+        line-height: 140%;
+        font-size: 1.875rem;
+
     }
     .textConsultation{
-        font-size: 0.8rem;
+
+        font-family:"Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+
     }
 
 

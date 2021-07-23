@@ -1,25 +1,145 @@
 .h2Text{
-    font-size: 2.8rem;
+
+    font-weight: 500;
+    font-size:3.125rem;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-style: normal;
+}
+.textPrice{
+   font-size: 1.25rem;
+    font-weight: bold;
+}
+.textName{
+    font-size: 1.25rem;
+}
+.textNumber{
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1.25rem;
 }
 .textSale{
     text-decoration: line-through;
-    font-size: 0.8rem;
+    font-size: 1rem;
     opacity: 0.8;
 }
 .buttonWueAll{
+    all: unset;
     background: #2B2A29;
     color: white;
     width: 196px;
     height: 50px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1rem;
+
 }
 .buttonLastWorks{
     background: none;
-    color: #000000;
+    color: #242424;
     width: 196px;
     height: 50px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 1rem;
     border: 1px solid #000000;
+}
+.spanNumber{
+    display: none;
+    background: none;
+    padding: 0 0 0 0;
+}
+
+@media (max-width: 550px){
+    .h2Text{
+
+        font-weight: 400;
+        font-size:1.875rem;
+        font-family: "Cormorant Garamond",sans-serif;
+        font-style: normal;
+        margin-top: -26px;
+    }
+    .textPrice{
+        font-family: "Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        margin-top: -10px;
+
+
+    }
+    .textName{
+        font-family: "Gilroy Regular", sans-serif;
+        font-size:0.875rem;
+    }
+    .textNumber{
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 0.875rem;
+    }
+    .textSale{
+        display: none;
+        text-decoration: line-through;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .buttonWueAll{
+        all: unset;
+        background: #2B2A29;
+        color: white;
+        width: 162px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.625rem;
+
+
+    }
+    .buttonLastWorks{
+        background: none;
+        color: #242424;
+        width: 162px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.625em;
+        border: 1px solid #000000;
+    }
+    .spanNumber{
+        display: none;
+        background: none;
+        padding: 0 0 0 0;
+    }
+
+}
+@media (min-width: 551px)and (max-width: 1000px){
+    .h2Text{
+        font-weight: 400;
+        font-size:2.5rem;
+        font-family: "Cormorant Garamond",sans-serif;
+        font-style: normal;
+    }
+    .textName{
+        font-family: "Gilroy Regular", sans-serif;
+        /*font-size:0.875rem;*/
+        background: none;
+    }
+    .textSale{
+        display: none;
+        text-decoration: line-through;
+        font-size: 1rem;
+        opacity: 0.8;
+    }
+    .textPrice{
+        font-family: "Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    .textNumber{
+        font-family: "Gilroy Regular", sans-serif;
+       display: none;
+    }
+    .spanNumber{
+        display: unset;
+        background: none;
+        padding: 0 0 0 0;
+    }
 }

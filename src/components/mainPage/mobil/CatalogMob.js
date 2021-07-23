@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {context} from "../utils/context";
+import {context} from "../../utils/context";
 import CatalogMobil from "./CatalogMobil";
 import CatalogTablet from "./CatalogTablet";
 

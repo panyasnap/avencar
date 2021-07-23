@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import logo from '../img/imgHeader/ЛОГОТИП (1) 2.png';
 import style from '../style/header.module.css';
 import lupa from '../img/imgHeader/lupa.svg';
+import {Link} from "react-router-dom";
+import {furniture, mainPage} from "./utils/constans";
 
 const Header = () => {
     const [spb, setSpb] = useState(false);
@@ -36,17 +38,17 @@ const Header = () => {
                     <div className={` mt-2 ${style.imgDark}`}>
                         <img className={`${style.imgSize} mt-1`} src={logo} alt='logo'/>
                     </div>
-                    <div className={showInput? `${style.divDark}` : `${style.displayDiv}`}>
+                    <div className={showInput ? `${style.divDark}` : `${style.displayDiv}`}>
 
                     </div>
-                    <div className='ml-5'>
-                        Главная
+                    <div className='ml-5'><Link className={`${style.linkStyle}`} to={`/${mainPage}`}>
+                        Главная</Link>
                     </div>
                     <div>
                         О нас
                     </div>
-                    <div>
-                        Мебель
+                    <div ><Link className={`${style.linkStyle}`} to={`/${furniture}`}>
+                        Мебель</Link>
                     </div>
                     <div>
                         Дизайн интерьера
@@ -69,9 +71,9 @@ const Header = () => {
                     </div>
                     <div>
 
-                        <select className={showInput ?`${style.selectDark}`: null} onChange={handleChange}>
-                            <option className='p-3' value='Msk'>Москва</option>
-                            <option className='p-3' value='spb'>Санкт-Петербург</option>
+                        <select className={showInput ? `${style.selectDark}` : null} onChange={handleChange}>
+                            <option className={`${style.selectLine} p-3`} value='Msk'>Москва</option>
+                            <option className={`${style.selectLine} p-3`} value='spb'>Санкт-Петербург</option>
                         </select>
                         {!spb ?
                             <div>+7 926 603 58 79</div> :
