@@ -41,29 +41,29 @@ const Header = () => {
                     <div className={showInput ? `${style.divDark}` : `${style.displayDiv}`}>
 
                     </div>
-                    <div className='ml-5'><Link className={`${style.linkStyle}`} to={`/${mainPage}`}>
+                    <div className='ml-5'><Link className={showInput ? `${style.linkStyleDark}`:`${style.linkStyle}`} to={`/${mainPage}`}>
                         Главная</Link>
                     </div>
-                    <div>
-                        О нас
+                    <div><Link className={showInput ? `${style.linkStyleDark}`:`${style.linkStyle}`}>
+                        О нас</Link>
                     </div>
-                    <div ><Link className={`${style.linkStyle}`} to={`/${furniture}`}>
+                    <div><Link className={showInput ? `${style.linkStyleDark}`:`${style.linkStyle}`} to={`/${furniture}`}>
                         Мебель</Link>
                     </div>
-                    <div>
-                        Дизайн интерьера
+                    <div><Link className={showInput ? `${style.linkStyleDark}`:`${style.linkStyle}`}>
+                        Дизайн интерьера</Link>
                     </div>
-                    <div>
-                        Портфолио
+                    <div><Link className={showInput ? `${style.linkStyleDark}`:`${style.linkStyle}`}>
+                        Портфолио</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv}` : null}>
-                        Блог
+                    <div className={showInput ? `${style.displayDiv}` : null}><Link className={`${style.linkStyle}`}>
+                        Блог</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv}` : null}>
-                        Акции
+                    <div className={showInput ? `${style.displayDiv}` : null}><Link className={`${style.linkStyle}`}>
+                        Акции</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv} mr-3` : 'mr-3'}>
-                        Контакты
+                    <div className={showInput ? `${style.displayDiv} mr-3` : 'mr-3'}><Link className={`${style.linkStyle}`}>
+                        Контакты</Link>
                     </div>
                     <input className={showInput ? `${style.inputHeader} ` : `${style.displayDiv} `}/>
                     <div className={`${style.imgInput}`} onClick={InputHandler}>

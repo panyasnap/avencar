@@ -53,6 +53,7 @@
 
 .imgDark {
     position: relative;
+
 }
 
 .divDark {
@@ -87,4 +88,14 @@ select {
 }
 .linkStyle{
     color: white;
+}
+.linkStyle:hover{
+    color: white;
+}
+.linkStyleDark{
+    color: #4C4C4C;
+
+}
+.linkStyleDark:hover{
+    color: #4C4C4C;
 }
