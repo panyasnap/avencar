@@ -9,13 +9,13 @@ const HeaderMobil = () => {
             <div className=' container'>
                 <div className='row d-flex justify-content-between align-items-center pt-2'>
 
-                        <div className={`${style.headerBurger} `}>
+                        <div className={`${style.headerBurger} mt-2`}>
                             <span/>
                         </div>
                         <div className=''>
                             <img src={logo} alt='logo'/>
                         </div>
-                        <div className='pr-4'>
+                        <div className='pr-4 mt-2'>
                             <img src={phone} alt='phone'/>
                         </div>
                 </div>

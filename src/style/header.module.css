@@ -8,6 +8,23 @@
     font-weight: 400;
 }
 
+.selectLine {
+    all: unset;
+    padding-top: 3rem;
+    line-height: 2;
+    text-decoration-line: underline;
+    /*text-decoration-thickness: 1px;*/
+
+}
+
+select {
+    cursor: pointer;
+    background-color: #4C4C4C;
+    color: white;
+    border: #4C4C4C;
+    text-decoration-line: underline;
+}
+
 .headerInputBack {
     color: #4C4C4C;
     height: 122px;
@@ -16,16 +33,71 @@
     text-transform: uppercase;
     font-family: 'Gilroy Regular', serif;
     font-weight: 400;
-    font-size: 0.875rem;
+    font-size: 1rem;
 }
 
 .inputHeader {
+    width: 292px;
+    height: 42px;
     background-color: #4C4C4C;
     border-color: white;
-
+    color: white;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+}
+
+.selectHeader {
+    cursor: pointer;
+    font-family: 'Gilroy Regular', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.875rem;
+    position: relative;
+    display: flex;
+    text-decoration-line: underline;
+    text-transform: none;
+
+
+}
+
+/*.selectUl {*/
+
+/*    font-weight: 400;*/
+/*    padding-left: 1rem;*/
+/*    font-size: 1rem;*/
+/*    color: rgb(192, 192, 192);*/
+/*    width: 196px;*/
+/*    height: 93px;*/
+/*    background-color: #5C5C5C;*/
+/*    position: absolute;*/
+/*    top: 20px;*/
+/*    z-index: 2;*/
+/*    text-decoration-line: underline;*/
+/*}*/
+
+
+/*.selectUl.active {*/
+/*    display: block*/
+/*}*/
+
+/*.selectUl.close {*/
+/*    display: none*/
+/*}*/
+
+.selectLI {
+    list-style-type: none
+}
+
+.selectLI:hover {
+    list-style-type: none;
+    color: white;
+}
+
+.iconSize {
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-family: 'Gilroy Regular', sans-serif;
 }
 
 @media (max-width: 1299px) {
@@ -42,7 +114,10 @@
 }
 
 .imgInput {
-    height: 1.7rem;
+    height: 25px;
+    width: 25px;
+    padding-top: 10px;
+
     cursor: pointer;
 }
 
@@ -58,13 +133,14 @@
 
 .divDark {
     position: absolute;
-    height: 100px;
-    width: 150px;
+    height: 100%;
+    width: 160px;
     background-color: #2E2E2E;
     opacity: 0.8;
 }
 
 .selectLine {
+
     text-decoration-line: underline;
     /*text-decoration-thickness: 1px;*/
 
@@ -75,7 +151,20 @@
     color: #4C4C4C;
 }
 
+.selectDarkInput {
+    background-color: #2E2E2E;
+    color: #4C4C4C;
+    text-transform: none;
+    pointer-events: none;
+
+}
+
+.custom-select {
+
+}
+
 select {
+
     cursor: pointer;
     background-color: #4C4C4C;
     color: white;
@@ -83,19 +172,25 @@ select {
     text-decoration-line: underline;
 }
 
+
 .displayDiv {
     display: none;
 }
-.linkStyle{
+
+.linkStyle {
     color: white;
 }
-.linkStyle:hover{
+
+.linkStyle:hover {
     color: white;
 }
-.linkStyleDark{
+
+.linkStyleDark {
     color: #4C4C4C;
+    pointer-events: none;
 
 }
-.linkStyleDark:hover{
+
+.linkStyleDark:hover {
     color: #4C4C4C;
 }

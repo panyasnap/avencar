@@ -79,8 +79,8 @@ const Footer = () => {
                                             </div>
                                         </div>
                                         <div className={`${style.marginServices} pt-5`}>
-                                            <p className={`${style.textServices} mb-2`}>Мебель</p>
-                                            <hr className='mt-0 mb-1'/>
+                                            <p className={`${style.textServicesFurniture} mb-2`}>Мебель</p>
+                                            <hr className='mt-0 mb-2'/>
                                             <p className={`${style.textInfo} m-0`}>Диваны, кушетки</p>
                                             <p className={`${style.textInfo} m-0`}>Кровати</p>
                                             <p className={`${style.textInfo} m-0`}>Кресла</p>
@@ -103,8 +103,8 @@ const Footer = () => {
                                                     className={`${style.textHelp}`}>материалами</p></div>
                                             </div>
                                         </div>
-                                        <div className={` ${style.marginServices} mt-4`}>
-                                            <p className={`${style.textServices}  mb-1`}>Дизайн</p>
+                                        <div className={` ${style.marginServices} mt-4 mt-sm-2 pt-sm-3 pt-lg-3 pt-xl-0 mt-lg-4`}>
+                                            <p className={`${style.textServices}  mb-lg-2 mb-sm-1 mb-1`}>Дизайн</p>
                                             <hr className='w-50 ml-0 mt-0 mb-2'/>
                                             <p className={`${style.textInfo} m-0`}>Портфолио</p>
                                             <p className={`${style.textInfo} m-0`}>Стоимость</p>
