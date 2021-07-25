@@ -39,7 +39,7 @@ const Header = () => {
             <div className='container '>
                 <div className='row justify-content-between align-items-end '>
                     <div className={`pt-2  ${style.imgDark}`}>
-                        <img className={`${style.imgSize}  h-100 w-100`} src={logo} alt='logo'/>
+                        <img className={`${style.imgSize}  h-100 w-100 noPoint`} src={logo} alt='logo'/>
                     </div>
                     <div className={showInput ? `${style.divDark}` : `${style.displayDiv}`}>
 

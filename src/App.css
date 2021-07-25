@@ -45,6 +45,9 @@ h2 {
 img {
     cursor: pointer;
 }
+.noPoint{
+    cursor: unset;
+}
 
 .selectUl {
 

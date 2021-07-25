@@ -10,7 +10,7 @@ const Catalog = () => {
     return (
         <div className='container-fluid '>
             <div className='row'>
-                <img className={`col-5 p-0`} src={sofa} alt='sofa'/>
+                <img className={`col-5 p-0 noPoint`} src={sofa} alt='sofa'/>
                 <div className={`col-7`}>
                     <div className='row '>
                         <div className='col-4 d-flex justify-content-center flex-column'>
