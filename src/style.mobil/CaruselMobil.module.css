@@ -5,6 +5,9 @@ span{
     width: 120%;
 
 }
+mark{
+    color: white;
+}
 .buttonCaruselMob {
     all: unset;
     text-align: center;
@@ -100,18 +103,27 @@ span{
         width: 120%;
         line-height: 1;
     }
-    .spanMob{
-        padding:  3px 20px 1px 20px;
+    .h3spanMob{
+
+        padding:  0.8px 20px 0.8px 20px;
         background-color: rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;
         width: 120%;
-        line-height: 158%;
+        line-height: 140%;
+    }
+    .spanMob{
+        padding: 0.8px 20px 0.8px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%;
     }
 }
 @media (min-width: 366px) and (max-width: 766px) {
-    .spanMob{
-        /*padding:  3.4px 20px 0px 20px;*/
-        padding:  2px 20px 0px 20px;
+    .h3spanMob{
+
+        padding:  1.75px 20px 1.75px 20px;
+        -webkit-padding:  1px 20px 1px 20px;
         background-color: rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;
         width: 120%;
@@ -131,8 +143,29 @@ span{
     }
     .pspanMob{
         padding-top: 3px;
-        padding-bottom: 0px;
+        padding-bottom: 2px;
         line-height: 178%;
+    }
+    .spanMob{
+
+        padding: 0.8px 20px 0.8px 20px;
+        -webkit-padding: 0px 20px 0px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%;
+    }
+    .ptextMob {
+
+        font-family: 'Gilroy Regular', sans-serif;
+        color: white;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        /*background: rgba(0, 0, 0, 0.5);*/
+        padding: 0.6rem 0 0.3rem 0;
+        font-size: 0.563rem;
+
     }
 }
 
@@ -181,11 +214,19 @@ span{
         padding-top: 17rem;
 
     }
-    .spanMob{
+    .h3spanMob{
         padding: 4.6px 20px 0.2px 20px;
         background-color: rgba(0, 0, 0, 0.5);
         background-repeat: no-repeat;
         width: 120%;
         line-height: 140%;
     }
+    .spanMob{
+        padding: 1.95px 20px 1.95px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%;
+    }
+
 }
