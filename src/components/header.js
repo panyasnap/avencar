@@ -7,22 +7,22 @@ import {furniture, mainPage} from "./utils/constans";
 import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
 
 const Header = () => {
-    const [spb, setSpb] = useState(false);
+    // const [spb, setSpb] = useState(false);
     const [showInput, setShowInput] = useState(false);
     const [open, setClose] = useState(false);
     const array = ['Москва', 'Санкт-Петербург'];
     const [value, setValue] = useState(array[0])
 
-    const handleChange = () => {
-        spb ? handleChangeMsk() : handleChangeSpb()
-    }
-    const handleChangeSpb = () => {
-        setSpb(true);
-
-    }
-    const handleChangeMsk = () => {
-        setSpb(false)
-    }
+    // const handleChange = () => {
+    //     spb ? handleChangeMsk() : handleChangeSpb()
+    // }
+    // const handleChangeSpb = () => {
+    //     setSpb(true);
+    //
+    // }
+    // const handleChangeMsk = () => {
+    //     setSpb(false)
+    // }
 
     const showInputHandler = () => {
         setShowInput(true)
@@ -45,30 +45,31 @@ const Header = () => {
 
                     </div>
 
-                    <div className='ml-5 pb-2'><Link className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
-                                                to={`/${mainPage}`}>
+                    <div className='ml-5 pb-2'><Link
+                        className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
+                        to={`/${mainPage}`}>
                         Главная</Link>
                     </div>
-                    <div className='pb-2'><Link className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
+                    <div className='pb-2'><Link to={'#'} className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                         О нас</Link>
                     </div>
                     <div className='pb-2'><Link className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
-                               to={`/${furniture}`}>
+                                                to={`/${furniture}`}>
                         Мебель</Link>
                     </div>
-                    <div className='pb-2'><Link className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
+                    <div className='pb-2'><Link to={'#'} className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                         Дизайн интерьера</Link>
                     </div>
-                    <div className='pb-2'><Link className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
+                    <div className='pb-2'><Link to={'#'} className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                         Портфолио</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv}` : 'pb-2'}><Link className={`${style.linkStyle}`}>
+                    <div className={showInput ? `${style.displayDiv}` : 'pb-2'}><Link to={'#'} className={`${style.linkStyle}`}>
                         Блог</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv}` : 'pb-2'}><Link className={`${style.linkStyle}`}>
+                    <div className={showInput ? `${style.displayDiv}` : 'pb-2'}><Link to={'#'} className={`${style.linkStyle}`}>
                         Акции</Link>
                     </div>
-                    <div className={showInput ? `${style.displayDiv} mr-3` : 'mr-3 pb-2'}><Link
+                    <div className={showInput ? `${style.displayDiv} mr-3` : 'mr-3 pb-2'}><Link to={'#'}
                         className={`${style.linkStyle}`}>
                         Контакты</Link>
                     </div>
@@ -83,15 +84,23 @@ const Header = () => {
                             {/*    <option className={`${style.selectLine} p-3`} >Санкт-Петербург</option>*/}
                             {/*</select>*/}
 
-                            <div className={showInput ? `${style.selectDarkInput}` : `${style.selectHeader}`} onClick={() => setClose(!open)}>
-                                {value} {!open ? <BsChevronDown className={`${style.iconSize} mt-2 ml-1`}/> : <BsChevronUp className={`${style.iconSize} mt-2 ml-1`}/>}
-                                <ul className={` selectUl ${open ? 'active' : 'close'}`}>
-                                        {array.map(item =>  <li key={item} className={`${style.selectLI}`} onClick={() => setValue(item)}><div className=' pt-3 m-0'>{item}</div></li>)}
+                            <div className={showInput ? `${style.selectDarkInput}` : `${style.selectHeader}`}
+                                 onClick={() => setClose(!open)}>
+                                {value} {!open ? <BsChevronDown className={`${style.iconSize} mt-2 ml-1`}/> :
+                                <BsChevronUp className={`${style.iconSize} mt-2 ml-1`}/>}
+                                <ul className={`selectUl ${open ? 'active' : 'close'}`}>
+                                    {array.map(item =>
+                                        <li key={item} className={`${style.selectLI}`}>
+                                                <span onClick={() => {
+                                                        setValue(item)
+                                                        setClose(false)
+                                                    }} className={`${style.selectSpan} m-0`}>{item}</span></li>)}
                                 </ul>
                             </div>
                             <div>
 
-                                <div className={showInput ? `${style.selectDarkInput}` : null}>{value === 'Москва' ?  '+7 926 603 58 79' :  '+7 921 322 21 76'}</div>
+                                <div
+                                    className={showInput ? `${style.selectDarkInput}` : null}>{value === 'Москва' ? '+7 926 603 58 79' : '+7 921 322 21 76'}</div>
                             </div>
 
                         </div>

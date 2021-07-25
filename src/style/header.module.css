@@ -86,12 +86,29 @@ select {
 /*}*/
 
 .selectLI {
+    margin-bottom: 10px;
     list-style-type: none
+}
+
+.selectLI:first-child {
+    margin-top: 15px;
 }
 
 .selectLI:hover {
     list-style-type: none;
+
+}
+.selectSpan{
+    text-decoration: underline;
+    background: none;
+    padding: 0;
+
+}
+.selectSpan:hover{
+    padding: 0;
+    background: none;
     color: white;
+
 }
 
 .iconSize {
