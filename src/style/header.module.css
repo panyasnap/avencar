@@ -16,6 +16,19 @@
     /*text-decoration-thickness: 1px;*/
 
 }
+/*.linkHover:hover .hrStyle {*/
+/*    opacity: 1;*/
+/*}*/
+
+.hrStyle {
+    opacity: 0;
+}
+.hrStyleClick{
+    opacity: 1;
+    font-family: 'Gilroy Medium', sans-serif;
+}
+
+
 
 select {
     cursor: pointer;
@@ -35,19 +48,32 @@ select {
     font-weight: 400;
     font-size: 1rem;
 }
-
+/*.inputTransition{*/
+/*    transition: all 0.4s linear;*/
+/*}*/
 .inputHeader {
+    transition: all 0.5s linear;
     width: 292px;
     height: 42px;
     background-color: #4C4C4C;
     border-color: white;
+    border-style: solid;
+    border-width: 1px;
     color: white;
     border-top: 0;
     border-left: 0;
     border-right: 0;
+
+    overflow: hidden;
+
+
 }
+.divInputHeader{
+    transition: all 4s linear;
+ }
 
 .selectHeader {
+
     cursor: pointer;
     font-family: 'Gilroy Regular', sans-serif;
     font-style: normal;
@@ -57,8 +83,7 @@ select {
     display: flex;
     text-decoration-line: underline;
     text-transform: none;
-
-
+    text-underline-offset: 3px
 }
 
 /*.selectUl {*/
@@ -84,27 +109,56 @@ select {
 /*.selectUl.close {*/
 /*    display: none*/
 /*}*/
+.linkHover{
+    font-family: 'Gilroy Medium', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 1px;
+}
 
 .selectLI {
     margin-bottom: 10px;
-    list-style-type: none
+    list-style-type: none;
+    color: white;
+    /*color: firebrick;*/
 }
 
 .selectLI:first-child {
     margin-top: 15px;
+    /*color: #E5E5E5;*/
+    color: white;
+    opacity: 0.5;
+
 }
+.selectLISpb{
+    margin-bottom: 10px;
+    list-style-type: none;
+    color: white;
+    opacity: 0.5;
+}
+.selectLISpb:first-child {
+    margin-top: 15px;
+    color: white;
+    opacity: unset;
+
+}
+
 
 .selectLI:hover {
     list-style-type: none;
 
 }
-.selectSpan{
-    text-decoration: underline;
+
+.selectSpan {
+    /*text-decoration: underline;*/
+    border-bottom: 1px solid white;
+
     background: none;
     padding: 0;
 
 }
-.selectSpan:hover{
+
+.selectSpan:hover {
     padding: 0;
     background: none;
     color: white;
@@ -115,6 +169,12 @@ select {
     font-size: 0.5rem;
     font-weight: bold;
     font-family: 'Gilroy Regular', sans-serif;
+}
+.selectDarkiconSize{
+    font-size: 0.5rem;
+    font-weight: bold;
+    font-family: 'Gilroy Regular', sans-serif;
+
 }
 
 @media (max-width: 1299px) {
@@ -127,6 +187,12 @@ select {
         font-weight: 400;
         font-size: 80%;
 
+    }
+    .linkHover{
+        font-family: 'Gilroy Medium', sans-serif;
+        font-weight: 400;
+        font-size: 99%;
+        /*padding-bottom: 1px;*/
     }
 }
 
@@ -174,7 +240,17 @@ select {
     text-transform: none;
     pointer-events: none;
 
+
 }
+.selectDarkText {
+    background-color: #2E2E2E;
+    color: #4C4C4C;
+    text-transform: none;
+    pointer-events: none;
+    text-decoration-line: underline;
+    text-underline-offset: 3px
+}
+
 
 .custom-select {
 
@@ -191,15 +267,22 @@ select {
 
 
 .displayDiv {
-    display: none;
+    height: 42px;
+    width: 0.4px;
+    opacity: 0;
+    margin-right: -35px;
+
 }
 
 .linkStyle {
     color: white;
+    text-decoration-line: none;
 }
 
 .linkStyle:hover {
     color: white;
+    text-decoration-line: none;
+
 }
 
 .linkStyleDark {

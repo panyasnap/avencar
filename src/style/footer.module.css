@@ -69,13 +69,14 @@
     font-size: 0.875rem;
 }
 .textAddress{
+    font-family: "Gilroy Ultra Light", sans-serif;
 
     font-style: normal;
     font-weight: 500;
     font-size: 0.875rem;
 }
 .textPhone{
-
+    font-family: "Gilroy Ultra Light", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;

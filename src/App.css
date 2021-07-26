@@ -1,4 +1,10 @@
-
+.pWeigth{
+    font-family: "Gilroy Ultra Light", sans-serif;
+    font-weight: 400;
+}
+body{
+    font-family: "Gilroy Regular", sans-serif;
+}
 
 h3 {
     font-family: 'Cormorant Garamond', serif;
@@ -57,8 +63,9 @@ img {
     position: absolute;
     top: 20px;
     z-index: 2;
-    text-decoration-line: underline;
+    /*text-decoration-line: underline;*/
 }
+
 .selectUl.active {
     display: block
 }

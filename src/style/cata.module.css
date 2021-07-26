@@ -1,7 +1,8 @@
-.backCata{
+.backCata {
     background: #E5E5E5;
 }
-.btnCata1{
+
+.btnCata1 {
 
     width: 196px;
     height: 50px;
@@ -11,34 +12,61 @@
     background-color: white;
 }
 
-.btnCata2   {
+.btnCata1:hover {
+
+    width: 196px;
+    height: 50px;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: white;
+    background-color: #4C4C4C;
+
+}
+
+.btnCata2 {
     all: unset;
     text-align: center;
     text-transform: uppercase;
     width: 196px;
     height: 50px;
     color: white;
-
-
     background: #4C4C4C;
+    border: 0.5px solid #4C4C4C;
 }
-.h3textCata{
-   font-size: 2.188rem
+
+.btnCata2:hover {
+    all: unset;
+    text-align: center;
+    text-transform: uppercase;
+    width: 196px;
+    height: 50px;
+    color: #4C4C4C;
+    background: white;
+    border: 0.5px solid #000000;
 }
-.ptextCata{
-   font-size: 1rem;
+
+.h3textCata {
+    font-size: 2.188rem
+}
+
+.ptextCata {
+    font-family: 'Gilroy Regular', sans-serif;
+    font-size: 1rem;
     margin-top: -6px;
 }
 
 @media (max-width: 1299px) {
-    .h3textCata{
+    .h3textCata {
         font-size: 1.5rem
     }
-    .ptextCata{
+
+    .ptextCata {
         font-size: 0.8rem;
 
     }
-    .btnCata1{
+
+    .btnCata1 {
 
         width: 100px;
         height: 35px;
@@ -50,7 +78,21 @@
         margin-top: -10px;
 
     }
-    .btnCata2{
+
+    .btnCata1:hover {
+        color: white;
+        width: 100px;
+        height: 35px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: #4C4C4C;
+        font-size: 0.8rem;
+        margin-top: -10px;
+
+    }
+
+    .btnCata2 {
         text-transform: uppercase;
 
         width: 100px;
@@ -58,19 +100,32 @@
         color: white;
         font-size: 0.8rem;
         background: #4C4C4C;
+        margin-top: -10px;
+    }
+
+    .btnCata2:hover {
+        text-transform: uppercase;
+        border: 0.5px solid #000000;
+        width: 100px;
+        height: 35px;
+        color: #000000;
+        font-size: 0.8rem;
+        background: white;
         margin-top: -10px;
     }
 }
 
-@media (max-width: 1421px ) and  (min-width: 1298px){
-    .h3textCata{
+@media (max-width: 1421px ) and  (min-width: 1298px) {
+    .h3textCata {
         font-size: 1.8rem
     }
-    .ptextCata{
+
+    .ptextCata {
         font-size: 1rem;
 
     }
-    .btnCata1{
+
+    .btnCata1 {
 
         width: 200px;
         height: 45px;
@@ -82,7 +137,21 @@
 
 
     }
-    .btnCata2{
+
+    .btnCata1:hover {
+        color: white;
+        width: 200px;
+        height: 45px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: #4C4C4C;
+        font-size: 1rem;
+
+
+    }
+
+    .btnCata2 {
         text-transform: uppercase;
 
         width: 200px;
@@ -90,6 +159,17 @@
         color: white;
         font-size: 1rem;
         background: #4C4C4C;
+
+    }
+
+    .btnCata2:hover {
+        text-transform: uppercase;
+        border: 0.5px solid #000000;
+        width: 100px;
+        height: 35px;
+        color: #000000;
+        font-size: 1rem;
+        background: white;
 
     }
 }

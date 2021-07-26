@@ -14,28 +14,28 @@ const LastWorks = () => {
             <div className='row text-center'>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0 '>
                     <img className='col-12' src={armchair} alt='armchair'/>
-                    <p className={`${style.textName} mt-1 mb-0 mb-lg-0 mb-sm-2`}>Диван эксклюзивный  <span className={`${style.spanNumber}`}>SD-313</span></p>
-                    <p className={`${style.textNumber} `}>SD-313</p>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Диван эксклюзивный  <span className={`${style.spanNumber}`}>SD-313</span>
+                    <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
                     <p className={`${style.textPrice}`}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
                     <img className='col-12' src={chair} alt='chair'/>
-                    <p className={`${style.textName} mt-1 mb-0 mb-lg-0 mb-sm-2`}>Кресло замшевое  <span className={`${style.spanNumber}`}>SD-313</span></p>
-                    <p className={`${style.textNumber} `}>SD-313</p>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло замшевое  <span className={`${style.spanNumber}`}>SD-313</span>
+                    <span className={`${style.textNumber} mb-2 `}>SD-313</span></div>
                     <p className={`${style.textPrice} mb-0`}>8 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
                     <img className='col-12' src={bed} alt='bed'/>
-                    <p className={`${style.textName} mt-1 mb-0 mb-lg-0 mb-sm-2`}>Кровать “Марсель” <span className={`${style.spanNumber}`}>SD-313</span></p>
-                    <p className={`${style.textNumber} `}>SD-313</p>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кровать “Марсель” <span className={`${style.spanNumber}`}>SD-313</span>
+                    <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
                     <p className={`${style.textPrice} `}>8 000 руб.</p>
 
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
                     <img className='col-12' src={pouf} alt='pouf'/>
-                    <div className={`${style.textName} mt-1 mb-0 mb-lg-0 mb-sm-2`}>Пуф эксклюзивный <span className={`${style.spanNumber}`}>SD-313</span></div>
-                    <p className={`${style.textNumber} `}>SD-313</p>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Пуф эксклюзивный <span className={`${style.spanNumber}`}>SD-313</span>
+                    <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
                     <p className={`${style.textPrice} mb-0`}>10 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>
                 </div>

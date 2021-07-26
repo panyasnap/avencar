@@ -1,18 +1,302 @@
 .backCategories {
-    background-image: url("/src/img/imgCategories/image 64.svg");
-    background-color: #EBEBEB;
+
+    /*background-color: #E5E5E5;*/
 }
-/*.textConsultation{*/
-/*    font-size: 1rem;*/
-/*}*/
-.textConsultation{
+.imgHover{
+    opacity: 0;
+    /*transition: all 0.4s linear;*/
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 16px;
+    height: 34.5%;
+    top: 22px;
+    color: white;
+    text-align: center;
+}
+.imgHoverChairs{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: white;
+    text-align: center;
+}
+.imgHoverChairs:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: white;
+    text-align: center;
+}
+.imgHoverKitchen{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 39%;
+    color: white;
+    text-align: center;
+}
+.imgHoverKitchen:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 39%;
+    color: white;
+    text-align: center;
+}
+.imgHoverTable{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.3%;
+    top: 2.4%;
+    color: white;
+    text-align: center;
+}
+.imgHoverTable:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.3%;
+    top: 2.4%;
+    color: white;
+    text-align: center;
+}
+.imgHoverBanquet{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 75.45%;
+    color: white;
+    text-align: center;
+}
+.imgHoverBanquet:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 75.45%;
+    color: white;
+    text-align: center;
+}
+.imgHoverBed{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 39%;
+    color: white;
+    text-align: center;
+}
+.imgHoverBed:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 22.2%;
+    top: 39%;
+    color: white;
+    text-align: center;
+}
+.imgHoverCupboard{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 46.4%;
+    top: 26.8%;
+    color: white;
+    text-align: center;
+}
+.imgHoverCupboard:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 46.4%;
+    top: 26.8%;
+    color: white;
+    text-align: center;
+}
+.imgHoverSofa{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 22.2%;
+    top: 2.3%;
+    color: white;
+    text-align: center;
+}
+.imgHoverSofa:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 22.2%;
+    top: 2.3%;
+    color: white;
+    text-align: center;
+}
+.imgHoverArmchair{
+    opacity: 0;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: white;
+    text-align: center;
+}
+.imgHoverArmchair:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: white;
+    text-align: center;
+}
+.imgHover:hover{
+    opacity: 1;
+    transition: all 0.4s linear;
+    position: absolute;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 92%;
+    left: 15px;
+    height: 34.2%;
+    top: 24px;
+    color: white;
+    text-align: center;
+}
+.h3Hover{
     font-family: "Gilroy Regular", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    /*padding-top: 5rem;*/
+}
+.hrStyle{
+    height: 2px;
+    width: 40%;
+}
+.pTextHover{
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1rem;
+
+}
+.furnitureText{
+
+    opacity: 0.5;
+    font-weight: 400;
+}
+.linkMain{
+    font-family: "Gilroy Regular", sans-serif;
+    color: #2B2A29;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+.linkMain:hover{
+    font-family: "Gilroy Regular", sans-serif;
+    color: #2B2A29;
+    text-decoration: none;
+    font-weight: 400;
+
+}
+.textConsultation{
     font-size: 1.125rem;
     font-style: normal;
     font-weight: normal;
 }
 .h2Text{
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 .h2TextConsultation{
@@ -26,7 +310,7 @@
 .textSofa {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 18%;
+    top: 19%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -38,7 +322,7 @@
 .textCupboard {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 67%;
+    top: 68%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -49,7 +333,7 @@
 .textBanquet {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 91%;
+    top: 92%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -65,7 +349,17 @@
 .textTable {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 30%;
+    top: 31%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+.textComm {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    top: 31%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -76,7 +370,7 @@
 .textKitchen {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 55%;
+    top: 56%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -87,7 +381,7 @@
 .textChairs {
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
-    top: 91%;
+    top: 92%;
     left: 10%;
     color: white;
     background: rgba(0, 0, 0, 0.5);
@@ -104,6 +398,40 @@
     font-size: 1rem;
 }
 @media  (min-width: 1001px) and (max-width: 1200px)  {
+    .imgHover{
+        opacity: 0;
+        /*transition: all 0.4s linear;*/
+        position: absolute;
+        /*width: 100%;*/
+        /*height: 100%;*/
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 92%;
+        left: 16px;
+        height: 34.5%;
+        top: 22px;
+        color: white;
+        text-align: center;
+    }
+    .imgHover:hover{
+        opacity: 1;
+        transition: all 0.4s linear;
+        position: absolute;
+        /*width: 100%;*/
+        /*height: 100%;*/
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 91%;
+        left: 15px;
+        height: 33.5%;
+        top: 24px;
+        color: white;
+        text-align: center;
+    }
+    .h3Hover{
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-top: 5rem;
+    }
     .textSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
@@ -114,6 +442,16 @@
         font-size: 1.5rem;
         font-weight: 500;
 
+    }
+    .textComm {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 31%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1.5rem;
+        font-weight: 500;
     }
 
     .textCupboard {

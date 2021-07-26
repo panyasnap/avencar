@@ -8,11 +8,11 @@ const Carusel = () => {
         <div>
             <Carousel className={`${style.carouselStyle} carouselStyle`} interval={null}>
                 <Carousel.Item>
-                    <img
+                    <a><img
                         className="d-block w-100 "
                         src={img}
                         alt="First slide"
-                    />
+                    /></a>
                     <Carousel.Caption >
                         <div className={`${style.textMain} `}>
                             <div className='w-100 '>
@@ -25,9 +25,11 @@ const Carusel = () => {
                                 <div className={`${style.ptext}`}>
                                     <div><span className={`${style.pspan}`}>Создаем уникальные интерьеры и мебель премиум</span>
                                     </div>
-                                    <span> класса в Москве и
+                                    <span className={`${style.pspan}`}> класса в Москве и
                                 Санкт-Петербурге</span></div>
                             </div>
+
+
                             <button className={`${style.buttonCarusel} mt-3`}>Заказать консультацию</button>
                         </div>
                     </Carousel.Caption>
@@ -51,7 +53,7 @@ const Carusel = () => {
                                 <div className={`${style.ptext}`}>
                                     <div><span className={`${style.pspan}`}>Создаем уникальные интерьеры и мебель премиум</span>
                                     </div>
-                                    <span> класса в Москве и
+                                    <span className={`${style.pspan}`}> класса в Москве и
                                 Санкт-Петербурге</span></div>
                             </div>
                             <button className={`${style.buttonCarusel} mt-3`}>Заказать консультацию</button>
@@ -76,7 +78,7 @@ const Carusel = () => {
                                 <div className={`${style.ptext}`}>
                                     <div><span className={`${style.pspan}`}>Создаем уникальные интерьеры и мебель премиум</span>
                                     </div>
-                                    <span> класса в Москве и
+                                    <span className={`${style.pspan}`}> класса в Москве и
                                 Санкт-Петербурге</span></div>
                             </div>
                             <button className={`${style.buttonCarusel} mt-3`}>Заказать консультацию</button>

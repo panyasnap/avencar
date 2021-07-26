@@ -10,10 +10,10 @@ const Catalog = () => {
     return (
         <div className='container-fluid '>
             <div className='row'>
-                <img className={`col-5 p-0 noPoint`} src={sofa} alt='sofa'/>
+                <img className={`col-5 p-0`} src={sofa} alt='sofa'/>
                 <div className={`col-7`}>
                     <div className='row '>
-                        <div className='col-4 d-flex justify-content-center flex-column'>
+                        <div className='col-4'>
 
                             <h3 className={`${style.h3textCata}`}>Изготовление мебели на заказ</h3>
                             <p className={`${style.ptextCata}`}>Создаем уникальные интерьеры и мебель премиум класса в
@@ -25,7 +25,7 @@ const Catalog = () => {
                     </div>
                     <div className='row '>
                         <img className='col-4 p-0 ' src={sofa2} alt='sofa'/>
-                        <div className='col-8 d-flex justify-content-center flex-column'>
+                        <div className='col-8 '>
                             <h3 className={`${style.h3textCata}`}>Дизайн интерьера</h3>
                             <p className={`${style.ptextCata} w-50`}>Создаем уникальные интерьеры и мебель премиум класса в
                                 Москве</p>

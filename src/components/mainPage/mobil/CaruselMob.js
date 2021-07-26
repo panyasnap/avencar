@@ -17,6 +17,9 @@ const CaruselMob = () => {
                         <div><span className={`${style.h3spanMob}`}>Дизайн, изготовление мебели</span></div>
                         <span className={`${style.h3spanMob} pb-1`}> и интерьера на заказ
                                 </span></h3>
+                    {/*<h3 className={`${style.h3textMob} w-75`}><span className={`${style.h3spanMob} `}>Дизайн, изготовление мебели*/}
+                    {/*    <br/> и интерьера на заказ*/}
+                    {/*            </span></h3>*/}
                 </div>
                 <div className='w-70 position-relative mb-1'>
                     <div className={`${style.ptextMob} `}>

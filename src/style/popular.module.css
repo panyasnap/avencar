@@ -6,15 +6,21 @@
     font-style: normal;
 }
 .textPrice{
+    font-family: "Gilroy Regular", sans-serif;
    font-size: 1.25rem;
     font-weight: bold;
 }
 .textName{
+    font-family: "Gilroy Regular", sans-serif;
     font-size: 1.25rem;
 }
 .textNumber{
+    display: block;
+    width: 100%;
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1.25rem;
+    background: none;
+   padding: 0 0 0 0;
 }
 .textSale{
     text-decoration: line-through;

@@ -3,7 +3,6 @@ span{
     background-color: rgba(0, 0, 0, 0.5);
     background-repeat: no-repeat;
     width: 120%;
-
 }
 mark{
     color: white;
@@ -124,7 +123,7 @@ mark{
 
         padding:  1.75px 20px 1.75px 20px;
         -webkit-padding:  1px 20px 1px 20px;
-        background-color: rgba(0, 0, 0, 0.5);
+        /*background-color: rgba(0, 0, 0, 0.5);*/
         background-repeat: no-repeat;
         width: 120%;
         line-height: 143%;
@@ -150,7 +149,7 @@ mark{
 
         padding: 0.8px 20px 0.8px 20px;
         -webkit-padding: 0px 20px 0px 20px;
-        background-color: rgba(0, 0, 0, 0.5);
+        /*background-color: rgba(0, 0, 0, 0.5);*/
         background-repeat: no-repeat;
         width: 120%;
         line-height: 140%;
