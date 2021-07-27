@@ -606,6 +606,16 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 1rem;
     }
+    .textComm {
+
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 28%;
+        left: 10%;
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 1rem;
+    }
 
     .textKitchen {
         font-family: "Gilroy Regular", sans-serif;
