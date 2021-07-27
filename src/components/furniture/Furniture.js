@@ -132,7 +132,12 @@ const Furniture = () => {
                     </div>
                 </div> :
                 <div className={`${style.backCategories} container-fluid`}>
-                    <h2 className={`${style.h2Text} text-center pt-5`}>Категории товаров</h2>
+                    <div className='row pt-3 pl-2'><Link className={`${style.linkMain}`}
+                                                         to={mainPage}>Главная</Link>
+                        <div className='pl-2 pr-2'>/</div>
+                        <div className={`${style.furnitureText}`}>Meбель</div>
+                    </div>
+                    <h2 className={`${style.h2Text} text-center pt-5`}>Мебель</h2>
                     <div className='row 0'>
                         <div className='col-6 p-0 m-0'>
                             <div className='mb-3'>
