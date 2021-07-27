@@ -2,7 +2,8 @@
 
     /*background-color: #E5E5E5;*/
 }
-.imgHover{
+
+.imgHover {
     opacity: 0;
     /*transition: all 0.4s linear;*/
     position: absolute;
@@ -16,7 +17,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverChairs{
+
+.imgHoverChairs {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -30,7 +32,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverChairs:hover{
+
+.imgHoverChairs:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -44,7 +47,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverKitchen{
+
+.imgHoverKitchen {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -58,21 +62,23 @@
     color: white;
     text-align: center;
 }
-.imgHoverKitchen:hover{
+
+.imgHoverKitchen:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
     /*width: 100%;*/
     /*height: 100%;*/
     background-color: rgba(0, 0, 0, 0.5);
-    width: 92%;
+    width: 92.2%;
     left: 15px;
-    height: 22.2%;
+    height: 22%;
     top: 39%;
     color: white;
     text-align: center;
 }
-.imgHoverTable{
+
+.imgHoverTable {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -86,7 +92,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverTable:hover{
+
+.imgHoverTable:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -100,7 +107,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverBanquet{
+
+.imgHoverBanquet {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -114,7 +122,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverBanquet:hover{
+
+.imgHoverBanquet:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -128,7 +137,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverBed{
+
+.imgHoverBed {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -142,7 +152,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverBed:hover{
+
+.imgHoverBed:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -151,12 +162,13 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 92.1%;
     left: 15px;
-    height: 22.2%;
+    height: 22%;
     top: 39%;
     color: white;
     text-align: center;
 }
-.imgHoverCupboard{
+
+.imgHoverCupboard {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -170,7 +182,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverCupboard:hover{
+
+.imgHoverCupboard:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -184,7 +197,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverSofa{
+
+.imgHoverSofa {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -198,7 +212,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverSofa:hover{
+
+.imgHoverSofa:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -212,7 +227,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverArmchair{
+
+.imgHoverArmchair {
     opacity: 0;
     transition: all 0.4s linear;
     position: absolute;
@@ -226,7 +242,8 @@
     color: white;
     text-align: center;
 }
-.imgHoverArmchair:hover{
+
+.imgHoverArmchair:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -242,7 +259,8 @@
     color: white;
     text-align: center;
 }
-.imgHover:hover{
+
+.imgHover:hover {
     opacity: 1;
     transition: all 0.4s linear;
     position: absolute;
@@ -256,53 +274,63 @@
     color: white;
     text-align: center;
 }
-.h3Hover{
+
+.h3Hover {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
     /*padding-top: 5rem;*/
 }
-.hrStyle{
+
+.hrStyle {
     height: 2px;
     width: 40%;
 }
-.pTextHover{
+
+.pTextHover {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1rem;
 
 }
-.furnitureText{
+
+.furnitureText {
 
     opacity: 0.5;
     font-weight: 400;
 }
-.linkMain{
+
+.linkMain {
     font-family: "Gilroy Regular", sans-serif;
     color: #2B2A29;
     text-decoration: none;
     font-weight: 400;
 
 }
-.linkMain:hover{
+
+.linkMain:hover {
     font-family: "Gilroy Regular", sans-serif;
     color: #2B2A29;
     text-decoration: none;
     font-weight: 400;
 
 }
-.textConsultation{
+
+.textConsultation {
     font-size: 1.125rem;
     font-style: normal;
     font-weight: normal;
 }
-.h2Text{
+
+.h2Text {
     font-size: 2.5rem;
     font-weight: 500;
 }
-.h2TextConsultation{
+
+.h2TextConsultation {
     font-size: 3.125rem;
     font-weight: bold;
 }
+
 .imgSofa {
     position: relative;
 }
@@ -356,7 +384,9 @@
     font-size: 1.875rem;
     font-weight: 500;
 }
+
 .textComm {
+
     font-family: "Gilroy Regular", sans-serif;
     position: absolute;
     top: 31%;
@@ -388,7 +418,8 @@
     font-size: 1.875rem;
     font-weight: 500;
 }
-.buttonConsultation{
+
+.buttonConsultation {
     width: 306px;
     height: 50px;
     border: 1px solid #000000;
@@ -397,8 +428,9 @@
     font-weight: 400;
     font-size: 1rem;
 }
-@media  (min-width: 1001px) and (max-width: 1200px)  {
-    .imgHover{
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .imgHover {
         opacity: 0;
         /*transition: all 0.4s linear;*/
         position: absolute;
@@ -412,7 +444,8 @@
         color: white;
         text-align: center;
     }
-    .imgHover:hover{
+
+    .imgHover:hover {
         opacity: 1;
         transition: all 0.4s linear;
         position: absolute;
@@ -426,12 +459,14 @@
         color: white;
         text-align: center;
     }
-    .h3Hover{
+
+    .h3Hover {
         font-family: "Gilroy Regular", sans-serif;
         font-size: 2.5rem;
         font-weight: 500;
         padding-top: 5rem;
     }
+
     .textSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
@@ -443,6 +478,7 @@
         font-weight: 500;
 
     }
+
     .textComm {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
@@ -514,11 +550,13 @@
         font-weight: 500;
     }
 }
+
 @media (min-width: 552px) and (max-width: 1000px) {
     .backCategories {
         background-image: none;
         background-color: #EBEBEB;
     }
+
     .imgSofa {
         position: relative;
     }
@@ -588,7 +626,8 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 1rem;
     }
-    .buttonConsultation{
+
+    .buttonConsultation {
         padding: 4px 0 4px 0;
         width: 206px;
         height: 40px;
@@ -600,24 +639,28 @@
         background: #242424;
         font-weight: 400;
     }
-    .h2TextConsultation{
+
+    .h2TextConsultation {
         font-size: 2.5rem;
         font-weight: bold;
     }
 
-    .h2Text{
+    .h2Text {
         font-size: 2.5rem;
     }
 }
-@media (max-width: 551px){
 
-    .h2Text{
+@media (max-width: 551px) {
+
+    .h2Text {
         font-size: 1.875rem;
     }
+
     .backCategories {
         background-image: none;
         background-color: #EBEBEB;
     }
+
     .imgSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: relative;
@@ -673,7 +716,8 @@
 
         font-size: 0.688rem;
     }
-    .textBed{
+
+    .textBed {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
@@ -706,6 +750,7 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
+
     .textChair {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
@@ -716,6 +761,7 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
+
     .textCommode {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
@@ -726,8 +772,9 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
-    .buttonConsultation{
-        font-family:"Gilroy Regular", sans-serif;
+
+    .buttonConsultation {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         width: 162px;
         height: 30px;
@@ -738,7 +785,8 @@
         color: white;
         background: #242424;
     }
-    .h2TextConsultation{
+
+    .h2TextConsultation {
 
         font-style: normal;
         font-weight: bold;
@@ -746,9 +794,10 @@
         font-size: 1.875rem;
 
     }
-    .textConsultation{
 
-        font-family:"Gilroy Regular", sans-serif;
+    .textConsultation {
+
+        font-family: "Gilroy Regular", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 0.875rem;
@@ -756,4 +805,44 @@
     }
 
 
+}
+
+.blockHover:hover .textComm {
+    opacity: 0;
+}
+
+.blockHover:hover .textBanquet {
+    opacity: 0;
+}
+
+.blockHover:hover .textChair {
+    opacity: 0;
+}
+
+.blockHover:hover .textChairs {
+    opacity: 0;
+}
+
+.blockHover:hover .textBed {
+    opacity: 0;
+}
+
+.blockHover:hover .textCupboard {
+    opacity: 0;
+}
+
+.blockHover:hover .textCommode {
+    opacity: 0;
+}
+
+.blockHover:hover .textKitchen {
+    opacity: 0;
+}
+
+.blockHover:hover .textTable {
+    opacity: 0;
+}
+
+.blockHover:hover .textSofa {
+    opacity: 0;
 }

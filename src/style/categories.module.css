@@ -2,23 +2,27 @@
     background-image: url("/src/img/imgCategories/image 64.svg");
     background-color: #EBEBEB;
 }
+
 /*.textConsultation{*/
 /*    font-size: 1rem;*/
 /*}*/
-.textConsultation{
+.textConsultation {
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: normal;
 }
-.h2Text{
+
+.h2Text {
     font-size: 3.125rem;
     font-weight: 500;
 }
-.h2TextConsultation{
+
+.h2TextConsultation {
     font-size: 3.125rem;
     font-weight: bold;
 }
+
 .imgSofa {
     position: relative;
 }
@@ -94,7 +98,8 @@
     font-size: 1.875rem;
     font-weight: 500;
 }
-.buttonConsultation{
+
+.buttonConsultation {
     width: 306px;
     height: 50px;
     border: 1px solid #000000;
@@ -103,7 +108,19 @@
     font-weight: 400;
     font-size: 1rem;
 }
-@media  (min-width: 1001px) and (max-width: 1200px)  {
+
+.buttonConsultation:hover {
+    width: 306px;
+    height: 50px;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    background: #000000;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
     .textSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
@@ -176,11 +193,13 @@
         font-weight: 500;
     }
 }
+
 @media (min-width: 552px) and (max-width: 1000px) {
     .backCategories {
         background-image: none;
         background-color: #EBEBEB;
     }
+
     .imgSofa {
         position: relative;
     }
@@ -188,7 +207,7 @@
     .textSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 18%;
+        top: 18.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -199,7 +218,7 @@
     .textCupboard {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 64%;
+        top: 64.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -209,7 +228,7 @@
     .textBanquet {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 89%;
+        top: 89.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -244,13 +263,14 @@
     .textChairs {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 89%;
+        top: 89.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
         font-size: 1rem;
     }
-    .buttonConsultation{
+
+    .buttonConsultation {
         padding: 4px 0 4px 0;
         width: 206px;
         height: 40px;
@@ -262,24 +282,41 @@
         background: #242424;
         font-weight: 400;
     }
-    .h2TextConsultation{
+
+    .buttonConsultation:hover {
+        padding: 4px 0 4px 0;
+        width: 206px;
+        height: 40px;
+        font-size: 0.75rem;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        background: none;
+        color: #242424;
+        background: none;
+        font-weight: 400;
+    }
+
+    .h2TextConsultation {
         font-size: 2.5rem;
         font-weight: bold;
     }
 
-    .h2Text{
+    .h2Text {
         font-size: 2.5rem;
     }
 }
-@media (max-width: 551px){
 
-    .h2Text{
+@media (max-width: 551px) {
+
+    .h2Text {
         font-size: 1.875rem;
     }
+
     .backCategories {
         background-image: none;
         background-color: #EBEBEB;
     }
+
     .imgSofa {
         font-family: "Gilroy Regular", sans-serif;
         position: relative;
@@ -335,7 +372,8 @@
 
         font-size: 0.688rem;
     }
-    .textBed{
+
+    .textBed {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         position: absolute;
@@ -368,6 +406,7 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
+
     .textChair {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
@@ -378,6 +417,7 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
+
     .textCommode {
         font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
@@ -388,8 +428,9 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 0.688rem;
     }
-    .buttonConsultation{
-        font-family:"Gilroy Regular", sans-serif;
+
+    .buttonConsultation {
+        font-family: "Gilroy Regular", sans-serif;
         padding: 4px 0 4px 0;
         width: 162px;
         height: 30px;
@@ -400,7 +441,21 @@
         color: white;
         background: #242424;
     }
-    .h2TextConsultation{
+
+    .buttonConsultation:hover {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0 4px 0;
+        width: 162px;
+        height: 30px;
+        font-size: 0.625rem;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        background: none;
+        color: #242424;
+        background: none;
+    }
+
+    .h2TextConsultation {
 
         font-style: normal;
         font-weight: bold;
@@ -408,9 +463,10 @@
         font-size: 1.875rem;
 
     }
-    .textConsultation{
 
-        font-family:"Gilroy Regular", sans-serif;
+    .textConsultation {
+
+        font-family: "Gilroy Regular", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 0.875rem;

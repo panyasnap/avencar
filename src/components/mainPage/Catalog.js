@@ -39,7 +39,7 @@ const Catalog = () => {
                     <div className='row'>
                         <img className='col-7 p-0 ' src={chair} alt='chair'/>
 
-                        <div className='col-5 d-flex justify-content-center flex-column'>
+                        <div className='col-5 '>
                             <h3 className={`${style.h3textCata}`}>Исторические копии</h3>
                             <p className={`${style.ptextCata}`}>Создаем уникальные интерьеры и мебель премиум класса в
                                 Москве</p>
