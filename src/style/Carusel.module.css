@@ -71,7 +71,7 @@ span{
     height: 3.125rem;
     align-items: flex-start;
     border: 0.5px solid #000000;
-    background: #fff;
+    background:#EBEBEB;
     color:  #000;
 }
 @media (min-width: 1023px) and (max-width: 1120px){
