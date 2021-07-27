@@ -29,6 +29,22 @@ const Header = () => {
     // const handleChangeMsk = () => {
     //     setSpb(false)
     // }
+    const handler = (event) => {
+        // changing the state to the name of the key
+        // which is pressed
+        if(event.keyCode === 27){
+           setShowInput(false)
+
+        }
+    };
+    const handlerMenu = (event) => {
+        // changing the state to the name of the key
+        // which is pressed
+        if(event.keyCode === 27){
+
+            setClose(!open)
+        }
+    };
 
     const showInputHandler = () => {
         setShowInput(true)
@@ -108,8 +124,8 @@ const Header = () => {
                         <hr className={page === 'contact' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
                     </div>
 
-                    <input
-                        className={showInput ? `${style.inputHeader} mb-3  mr-0` : `${style.displayDiv} p-0 mr-0 ml-0 mb-3`}
+                    <input  onKeyDown={handler}
+                        className={showInput ? `${style.inputHeader}  mb-3  mr-0` : `${style.displayDiv}  p-0 mr-0 ml-0 mb-3`}
                         placeholder='  Поиск...'/>
 
                     <div className={`${style.imgInput} h-100 mr-1 pb-4`} onClick={InputHandler}>
@@ -122,13 +138,13 @@ const Header = () => {
                             {/*    <option className={`${style.selectLine} p-3`} >Санкт-Петербург</option>*/}
                             {/*</select>*/}
 
-                            <div className={showInput ? `${style.selectDarkText}` : `${style.selectHeader}`}
+                            <div  className={showInput ? `${style.selectDarkText}` : `${style.selectHeader}`}
                                  onClick={() => setClose(!open)}>
                                 {value}{!open ?
                                 <BsChevronDown
                                     className={showInput ? `${style.selectDarkiconSize} ml-1` : `${style.iconSize} mt-2 ml-1`}/> :
                                 <BsChevronUp className={`${style.iconSize} mt-2 ml-1`}/>}
-                                <ul className={`selectUl ${open ? 'active' : 'close'}`}>
+                                <ul onKeyPress={handlerMenu} className={`selectUl ${open ? 'active' : 'close'}`}>
                                     {array.map(item =>
                                         <li key={item}
                                             className={value === 'Москва' ? `${style.selectLI}` : `${style.selectLISpb}`}>
