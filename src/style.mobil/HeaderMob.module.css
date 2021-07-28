@@ -1,43 +1,58 @@
 .headerBack{
     height: 69px;
     background: #4C4C4C;
+    z-index: 4;
 }
-.headerBurger {
-    display: block;
-    position: relative;
-    width: 24.06px;
-    height: 21.2px;
-    margin-left: 27px;
-    /*margin-top: 16px;*/
-    background: none;
-}
-.headerBurger:before,
-.headerBurger:after {
-    content: '';
-    background-color: white;
-    position: absolute;
-    width: 100%;
-    height: 2.19px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-    z-index: 5;
-}
+/*.headerBurger {*/
+/*    display: block;*/
+/*    position: relative;*/
+/*    width: 24.06px;*/
+/*    height: 21.2px;*/
+/*    margin-left: 27px;*/
+/*    !*margin-top: 16px;*!*/
+/*    background: none;*/
+/*}*/
+/*.headerBurger:before,*/
+/*.headerBurger:after {*/
+/*    content: '';*/
+/*    background-color: white;*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 2.19px;*/
+/*    left: 0;*/
+/*    transition: all 0.3s ease 0s;*/
+/*    z-index: 5;*/
+/*}*/
 
-.headerBurger:before {
-    top: 0
-}
+/*.headerBurger:before {*/
+/*    top: 0*/
+/*}*/
 
-.headerBurger:after {
-    bottom: 0;
+/*.headerBurger:after {*/
+/*    bottom: 0;*/
 
-}
-.headerBurger span {
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 2.19px;
-    left: 0;
-    top: 10px;
-    padding: 0;
-    transition: all 0.3s ease 0s;
-}
+/*}*/
+/*.headerBurger span {*/
+/*    position: absolute;*/
+/*    background-color: white;*/
+/*    width: 100%;*/
+/*    height: 2.19px;*/
+/*    left: 0;*/
+/*    top: 10px;*/
+/*    padding: 0;*/
+/*    transition: all 0.3s ease 0s;*/
+/*}*/
+/*.headerBurger.active:before {*/
+/*    transform: rotate(45deg);*/
+/*    top: 10px*/
+/*}*/
+
+/*.headerBurger.active:after {*/
+/*    transform: rotate(-45deg);*/
+/*    bottom: 10px;*/
+
+/*}*/
+
+/*.headerBurger.active span {*/
+/*    transform: scale(0);*/
+/*}*/

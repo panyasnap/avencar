@@ -12,6 +12,7 @@
 
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1.25rem;
+    padding: 0 16px 0 16px;
     font-weight: bold;
 }
 
@@ -19,6 +20,7 @@
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1.25rem;
     min-height: 69px;
+    padding: 0 16px 0 16px;
 }
 
 .textNumber {
@@ -34,6 +36,7 @@
     text-decoration: line-through;
     font-size: 1rem;
     opacity: 0.8;
+    padding: 0 16px 0 16px;
 }
 
 .buttonWueAll {
@@ -49,6 +52,7 @@
 }
 .buttonWueAll:hover {
     all: unset;
+    cursor: pointer;
     background: none;
     color: #242424;
     width: 196px;
@@ -72,6 +76,7 @@
 }
 .buttonLastWorks:hover {
     all: unset;
+    cursor: pointer;
     background: #2B2A29;
     color: white;
     width: 196px;
@@ -127,6 +132,7 @@
 
     .buttonWueAll {
         all: unset;
+        cursor: pointer;
         background: #2B2A29;
         color: white;
         width: 162px;
@@ -140,6 +146,7 @@
     }
     .buttonWueAll:hover {
         all: unset;
+        cursor: pointer;
         background: none;
         color: #242424;
         width: 162px;

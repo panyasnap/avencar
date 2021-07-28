@@ -10,6 +10,7 @@ import table from '../../img/imgCategories/Rectangle 46.png';
 import kitchen from '../../img/imgCategories/Rectangle 50.png';
 import chairs from '../../img/imgCategories/Rectangle 48.png';
 import {context} from "../utils/context";
+import {Link} from "react-router-dom";
 
 const Categories = () => {
     const {windowWidth} = useContext(context);
@@ -22,43 +23,43 @@ const Categories = () => {
                         <div className='row '>
                             <div className='col-4 p-0 '>
                                 <div className='mt-4 mb-4'>
-                                    <img className={`${style.imgSofa} col-12 `} src={commode} alt='commode'/>
+                                    <Link to={`#`}>  <img className={`${style.imgSofa} col-12 `} src={commode} alt='commode'/></Link>
                                     <p className={`${style.textTable} pl-4 pr-4`}>Комоды</p>
                                 </div>
                                 <div className='mt-4 mb-4'>
-                                    <img className={`${style.imgSofa} col-12 `} src={bed} alt='bed'/>
+                                    <Link to={`#`}>  <img className={`${style.imgSofa} col-12 `} src={bed} alt='bed'/></Link>
                                     <p className={`${style.textKitchen} pl-4 pr-4`}>Кровати</p>
                                 </div>
                                 <div className='mt-4 mb-4'>
-                                    <img className={`${style.imgSofa} col-12 `} src={armchair} alt='armchair'/>
+                                    <Link to={`#`}> <img className={`${style.imgSofa} col-12 `} src={armchair} alt='armchair'/></Link>
                                     <p className={`${style.textChairs} pl-4 pr-4`}>Кресла</p>
                                 </div>
                             </div>
                             <div className='col-4 p-0'>
                                 <div className='mt-4 mb-4 '>
-                                    <img className={`${style.imgSofa} col-12 `} src={sofa} alt='sofa'/>
+                                    <Link to={`#`}><img className={`${style.imgSofa} col-12 `} src={sofa} alt='sofa'/></Link>
                                     <p className={`${style.textSofa} pl-4 pr-4`}>Диваны</p>
                                 </div>
                                 <div className='mt-4 mb-4 '>
-                                    <img className={`${style.imgCupboard} col-12 `} src={cupboard} alt='cupboard'/>
+                                    <Link to={`#`}> <img className={`${style.imgCupboard} col-12 `} src={cupboard} alt='cupboard'/></Link>
                                     <p className={`${style.textCupboard} pl-4 pr-4`}>Шкафы</p>
                                 </div>
                                 <div className='mt-4 mb-4'>
-                                    <img className={`${style.imgCupboard} col-12 `} src={banquet} alt='banquet'/>
+                                    <Link to={`#`}> <img className={`${style.imgCupboard} col-12 `} src={banquet} alt='banquet'/></Link>
                                     <p className={`${style.textBanquet} pl-4 pr-4`}>Банкетки</p>
                                 </div>
                             </div>
                             <div className='col-4 p-0'>
                                 <div className='mt-4 mb-4 '>
-                                    <img className={`${style.imgSofa} col-12 `} src={table} alt='table'/>
+                                    <Link to={`#`}> <img className={`${style.imgSofa} col-12 `} src={table} alt='table'/></Link>
                                     <p className={`${style.textTable} pl-4 pr-4`}>Столы</p>
                                 </div>
                                 <div className='mt-4 mb-4 '>
-                                    <img className={`${style.imgSofa} col-12`} src={kitchen} alt='kitchen'/>
+                                    <Link to={`#`}> <img className={`${style.imgSofa} col-12`} src={kitchen} alt='kitchen'/></Link>
                                     <p className={`${style.textKitchen} pl-4 pr-4`}>Кухни</p>
                                 </div>
                                 <div className='mt-4 mb-4 '>
-                                    <img className={`${style.imgSofa} col-12`} src={chairs} alt='chairs'/>
+                                    <Link to={`#`}>  <img className={`${style.imgSofa} col-12`} src={chairs} alt='chairs'/></Link>
                                     <p className={`${style.textChairs} pl-4 pr-4`}>Стулья</p>
                                 </div>
                             </div>

@@ -10,6 +10,7 @@ import vk from '../footerImg/Vector.svg';
 import fb from '../footerImg/fb.svg';
 import pin from '../footerImg/Vector (1).svg';
 import {context} from "./utils/context";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     const {windowWidth} = useContext(context);
@@ -42,10 +43,11 @@ const Footer = () => {
                                         <p className={`${style.textAddress}`}>(по предварительной записи)</p>
                                     </div>
                                     <div className='row'>
-                                        <img className='m-1 ml-3' src={insta} alt='inst'/>
-                                        <img className='m-1' src={vk} alt='vk'/>
-                                        <img className='m-1' src={fb} alt='fb'/>
-                                        <img className='m-1' src={pin} alt='pin'/>
+                                        <div className='m-1 pl-3'><Link to={`#`}> <img className='w-100 ' src={insta}
+                                                                                       alt='inst'/></Link></div>
+                                        <div className='m-1'><Link to={'#'}> <img src={vk} alt='vk'/></Link></div>
+                                        <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb} alt='fb'/></Link></div>
+                                        <div className='m-1'> <Link to={'#'}><img className='w-100' src={pin} alt='pin'/></Link></div>
                                     </div>
                                 </div>
 
@@ -62,7 +64,7 @@ const Footer = () => {
                                             </div>
                                         </div>
                                         <div className='pt-4 '><p className={`${style.textServices} mb-2`}>Услуги</p>
-                                            <hr className='mt-0 mb-1'/>
+                                            <hr className={`${style.hrLine} mt-0 mb-1`}/>
                                             <p className={`${style.textInfo} m-0`}>Изготовление мебели</p>
                                             <p className={`${style.textInfo} m-0`}>Дизайн интерьера</p>
 
@@ -80,7 +82,7 @@ const Footer = () => {
                                         </div>
                                         <div className={`${style.marginServices} pt-5`}>
                                             <p className={`${style.textServicesFurniture} mb-2`}>Мебель</p>
-                                            <hr className='mt-0 mb-2'/>
+                                            <hr className={`${style.hrLine} mt-0 mb-2`}/>
                                             <p className={`${style.textInfo} m-0`}>Диваны, кушетки</p>
                                             <p className={`${style.textInfo} m-0`}>Кровати</p>
                                             <p className={`${style.textInfo} m-0`}>Кресла</p>
@@ -103,9 +105,10 @@ const Footer = () => {
                                                     className={`${style.textHelp}`}>материалами</p></div>
                                             </div>
                                         </div>
-                                        <div className={` ${style.marginServices} mt-4 mt-sm-2 pt-sm-3 pt-lg-3 pt-xl-0 mt-lg-4`}>
+                                        <div
+                                            className={` ${style.marginServices} mt-4 mt-sm-2 pt-sm-3 pt-lg-3 pt-xl-0 mt-lg-4`}>
                                             <p className={`${style.textServices}  mb-lg-2 mb-sm-1 mb-1`}>Дизайн</p>
-                                            <hr className='w-50 ml-0 mt-0 mb-2'/>
+                                            <hr className={`${style.hrLine} w-50 ml-0 mt-0 mb-2`}/>
                                             <p className={`${style.textInfo} m-0`}>Портфолио</p>
                                             <p className={`${style.textInfo} m-0`}>Стоимость</p>
 
@@ -122,7 +125,7 @@ const Footer = () => {
                                             </div>
                                         </div>
                                         <div className='pt-5'><p className={`${style.textServices} mb-2`}>О нас</p>
-                                            <hr className='mt-0 mb-2'/>
+                                            <hr className={`${style.hrLine} mt-0 mb-2`}/>
                                             <p className={`${style.textInfo} m-0`}>Контакты</p>
                                             <p className={`${style.textInfo} m-0`}>Как мы работаем</p>
                                             <div className={`${style.textInfo} m-0`}>Доставка, гарантия
@@ -177,10 +180,11 @@ const Footer = () => {
                                         <p className={`${style.textAddress}`}>(по предварительной записи)</p>
 
                                         <div className='row'>
-                                            <img className='mr-1 pl-3 ' src={insta} alt='inst'/>
-                                            <img className='m-1' src={vk} alt='vk'/>
-                                            <img className='m-1' src={fb} alt='fb'/>
-                                            <img className='m-1' src={pin} alt='pin'/>
+                                            <div className='m-1 pl-3'><Link to={`#`}> <img className='w-100 ' src={insta}
+                                                                                            alt='inst'/></Link></div>
+                                            <div className='m-1'><Link to={'#'}> <img src={vk} alt='vk'/></Link></div>
+                                            <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb} alt='fb'/></Link></div>
+                                           <div className='m-1'> <Link to={'#'}><img className='w-100' src={pin} alt='pin'/></Link></div>
                                         </div>
                                     </div>
                                 </div>

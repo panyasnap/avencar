@@ -26,6 +26,7 @@
 
 .btnCata2 {
     all: unset;
+    cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     width: 196px;
@@ -37,6 +38,7 @@
 
 .btnCata2:hover {
     all: unset;
+    cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     width: 196px;
@@ -44,21 +46,37 @@
     color: #4C4C4C;
     background: white;
     border: 0.5px solid #000000;
+
 }
 
 .h3textCata {
-    font-size: 2.188rem
+    /*padding: 4% 0 0 7px;*/
+    font-size: 2.188rem;
+    line-height: 35px;
+}
+.h3textDesign{
+    /*padding: 2.3% 0 0 0;*/
+    font-size: 2.188rem;
+    line-height: 35px;
 }
 
 .ptextCata {
     font-family: 'Gilroy Regular', sans-serif;
     font-size: 1rem;
-    margin-top: -6px;
+    /*padding:10px 0 16px 7px;*/
+
 }
 
 @media (max-width: 1299px) {
     .h3textCata {
-        font-size: 1.5rem
+
+        font-size: 1.5rem;
+        line-height: 24px;
+    }
+    .h3textDesign{
+
+        font-size: 1.5rem;
+        line-height: 24px;
     }
 
     .ptextCata {
@@ -117,7 +135,14 @@
 
 @media (max-width: 1421px ) and  (min-width: 1298px) {
     .h3textCata {
-        font-size: 1.8rem
+
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    .h3textDesign{
+
+        font-size: 1.8rem;
+        line-height: 35px;
     }
 
     .ptextCata {

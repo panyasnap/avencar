@@ -136,7 +136,7 @@
     .textCupboard {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 68%;
+        top: 67%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -147,7 +147,7 @@
     .textBanquet {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 92%;
+        top: 91.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -163,7 +163,7 @@
     .textTable {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 31%;
+        top: 30%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -174,7 +174,7 @@
     .textKitchen {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 56%;
+        top: 55%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);
@@ -185,7 +185,7 @@
     .textChairs {
         font-family: "Gilroy Regular", sans-serif;
         position: absolute;
-        top: 92%;
+        top: 91.5%;
         left: 10%;
         color: white;
         background: rgba(0, 0, 0, 0.5);

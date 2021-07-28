@@ -10,7 +10,7 @@ const CatalogMobil = () => {
     return (
         <div>
             <img className='w-100' src={chair} alt='chair'/>
-            <div className='container pb-3 pt-4'>
+            <div className='container pb-3 pt-3'>
                 <div className='d-flex justify-content-center flex-column '>
                     <h3 className={`${style.h3text}`}>Изготовление мебели на заказ</h3>
                     <p className={`${style.ptext} mr-3`}>Создаем уникальные интерьеры и мебель премиум класса в
@@ -19,7 +19,7 @@ const CatalogMobil = () => {
                 </div>
             </div>
             <img className='w-100' src={chair2} alt='chair2'/>
-            <div className=' d-flex justify-content-center flex-column container  pb-3 pt-4'>
+            <div className=' d-flex justify-content-center flex-column container  pb-3 pt-3'>
                 <h3 className={`${style.h3text}`}>Дизайн интерьера</h3>
                 <p className={`${style.ptext} mr-3 `}>Создаем уникальные интерьеры и мебель премиум класса в
                     Москве</p>
@@ -27,7 +27,7 @@ const CatalogMobil = () => {
             </div>
             <img className='w-100' src={sofa} alt='sofa'/>
             <img className='w-100' src={chairs} alt='chairs'/>
-            <div className='d-flex justify-content-center flex-column container  pb-3 pt-4'>
+            <div className='d-flex justify-content-center flex-column container  pb-3 pt-3'>
                 <h3 className={`${style.h3text}`}>Исторические копии</h3>
                 <p className={`${style.ptext} mr-3`}>Создаем уникальные интерьеры и мебель премиум класса в
                     Москве</p>

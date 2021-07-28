@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from '../footerImg/ЛОГОТИП (1) 2.svg';
 import style from '../style/header.module.css';
 import lupa from '../img/imgHeader/lupa.svg';
 import {Link} from "react-router-dom";
-import {furniture, mainPage} from "./utils/constans";
+import {aboutUs, design, furniture, mainPage} from "./utils/constans";
 import {BsChevronDown, BsChevronUp} from 'react-icons/bs'
 
 
@@ -29,20 +29,21 @@ const Header = () => {
     // const handleChangeMsk = () => {
     //     setSpb(false)
     // }
+    useEffect(() => {
+
+        document.addEventListener('mousedown', closeInputHandler)
+        // document.addEventListener('mousedown', setClose(!open))
+
+    }, [])
+    // const closeMenu =() => {
+    //     setClose(false)
+    // }
     const handler = (event) => {
         // changing the state to the name of the key
         // which is pressed
-        if(event.keyCode === 27){
-           setShowInput(false)
+        if (event.keyCode === 27) {
+            setShowInput(false)
 
-        }
-    };
-    const handlerMenu = (event) => {
-        // changing the state to the name of the key
-        // which is pressed
-        if(event.keyCode === 27){
-
-            setClose(!open)
         }
     };
 
@@ -67,84 +68,79 @@ const Header = () => {
 
                     </div>
 
-                    <div className={page === 'main' ? `${style.linkHover} ml-5 ` : ' ml-5'}>
+                    <div className={page === 'main' ? `${style.linkHover} ml-5 ` : ' pb-3 ml-5'}>
                         <Link onClick={() => setPage('main')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
                               to={`/${mainPage}`}>
                             Главная</Link>
-                        <hr className={page === 'main' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'main' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'about' ? `${style.linkHover}` : null}>
-                        <Link to={'#'} onClick={() => setPage('about')}
+                    <div className={page === 'about' ? `${style.linkHover}` : ' pb-3'}>
+                        <Link to={`/${aboutUs}`} onClick={() => setPage('about')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                             О нас</Link>
-                        <hr className={page === 'about' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'about' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'furniture' ? `${style.linkHover}` : null}>
+                    <div className={page === 'furniture' ? `${style.linkHover}` : ' pb-3'}>
                         <Link onClick={() => setPage('furniture')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
                               to={`/${furniture}`}>
                             Мебель</Link>
-                        <hr className={page === 'furniture' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'furniture' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
 
-                    <div className={page === 'disign' ? `${style.linkHover}` : null}>
-                        <Link to={'#'} onClick={() => setPage('disign')}
+                    <div className={page === 'design' ? `${style.linkHover}` : ' pb-3'}>
+                        <Link to={`/${design}`} onClick={() => setPage('design')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>{showInput ?
                             'Услуги' : ' Дизайн интерьера'}</Link>
-                        <hr className={page === 'disign' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'design' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'portfolio' ? `${style.linkHover}` : null}>
+                    <div className={page === 'portfolio' ? `${style.linkHover}` : ' pb-3'}>
                         <Link to={'#'} onClick={() => setPage('portfolio')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                             Портфолио</Link>
-                        <hr className={page === 'portfolio' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'portfolio' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv}` : null}>
-                        <div className={page === 'blog' ? `${style.linkHover}` : null}>
+                        <div className={page === 'blog' ? `${style.linkHover}` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('blog')}
                                   className={`${style.linkStyle}`}>
                                 Блог</Link>
                         </div>
-                        <hr className={page === 'blog' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'blog' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv}` : null}>
-                        <div className={page === 'sale' ? `${style.linkHover}` : null}>
+                        <div className={page === 'sale' ? `${style.linkHover}` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('sale')}
                                   className={`${style.linkStyle}`}>
                                 Акции</Link>
                         </div>
-                        <hr className={page === 'sale' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'sale' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv} mr-3` : ` `}>
-                        <div className={page === 'contact' ? `${style.linkHover}` : null}>
+                        <div className={page === 'contact' ? `${style.linkHover}` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('contact')}
                                   className={`${style.linkStyle}`}>
                                 Контакты</Link></div>
-                        <hr className={page === 'contact' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>
+                        {/*<hr className={page === 'contact' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-
-                    <input  onKeyDown={handler}
-                        className={showInput ? `${style.inputHeader}  mb-3  mr-0` : `${style.displayDiv}  p-0 mr-0 ml-0 mb-3`}
-                        placeholder='  Поиск...'/>
-
+                    <form>
+                        <input onKeyDown={handler}
+                               className={showInput ? `${style.inputHeader}  mb-3  mr-0` : `${style.displayDiv}  p-0 mr-0 ml-0 mb-3`}
+                               placeholder='  Поиск...'/>
+                    </form>
                     <div className={`${style.imgInput} h-100 mr-1 pb-4`} onClick={InputHandler}>
                         <img className='' src={lupa} alt='lupa'/>
                     </div>
                     <div>
-                        <div className={`${style.linkStyle}`}>
-                            {/*<select className={showInput ? `${style.selectDark}` : null} onChange={handleChange}>*/}
-                            {/*    <option className={`${style.selectLine} p-3`} >Москва</option>*/}
-                            {/*    <option className={`${style.selectLine} p-3`} >Санкт-Петербург</option>*/}
-                            {/*</select>*/}
-
-                            <div  className={showInput ? `${style.selectDarkText}` : `${style.selectHeader}`}
+                        <div className={``}>
+                            <div className={showInput ? `${style.selectDarkText}` : `${style.selectHeader}`}
                                  onClick={() => setClose(!open)}>
                                 {value}{!open ?
                                 <BsChevronDown
                                     className={showInput ? `${style.selectDarkiconSize} ml-1` : `${style.iconSize} mt-2 ml-1`}/> :
                                 <BsChevronUp className={`${style.iconSize} mt-2 ml-1`}/>}
-                                <ul onKeyPress={handlerMenu} className={`selectUl ${open ? 'active' : 'close'}`}>
+                                <ul  className={`selectUl ${open ? 'active' : 'close'}`}>
                                     {array.map(item =>
                                         <li key={item}
                                             className={value === 'Москва' ? `${style.selectLI}` : `${style.selectLISpb}`}>

@@ -20,13 +20,13 @@
 /*    opacity: 1;*/
 /*}*/
 
-.hrStyle {
-    opacity: 0;
-}
-.hrStyleClick{
-    opacity: 1;
-    font-family: 'Gilroy Medium', sans-serif;
-}
+/*.hrStyle {*/
+/*    opacity: 0;*/
+/*}*/
+/*.hrStyleClick{*/
+/*    opacity: 1;*/
+/*    font-family: 'Gilroy Medium', sans-serif;*/
+/*}*/
 
 
 
@@ -113,7 +113,9 @@ select {
     font-family: 'Gilroy Medium', sans-serif;
     font-weight: 400;
     font-size: 1rem;
-    padding-bottom: 1px;
+    padding-bottom: 17px;
+    text-underline-offset: 6px;
+    text-decoration-line: underline;
 }
 
 .selectLI {
@@ -248,13 +250,12 @@ select {
     text-transform: none;
     pointer-events: none;
     text-decoration-line: underline;
-    text-underline-offset: 3px
+    text-underline-offset: 3px;
+    font-size: 0.875rem;
 }
 
 
-.custom-select {
 
-}
 
 select {
 
@@ -281,7 +282,8 @@ select {
 
 .linkStyle:hover {
     color: white;
-    text-decoration-line: none;
+    text-decoration-line: underline;
+    text-underline-offset: 6px;
 
 }
 

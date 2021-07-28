@@ -2,17 +2,18 @@ import React from 'react';
 import {Carousel} from "react-bootstrap";
 import img from "../../img/imgHeader/Rectangle.svg";
 import style from '../../style/Carusel.module.css';
+import {Link} from "react-router-dom";
 
 const Carusel = () => {
     return (
         <div>
             <Carousel className={`${style.carouselStyle} carouselStyle`} interval={null}>
                 <Carousel.Item>
-                    <a><img
+                    <Link to={'#'}><img
                         className="d-block w-100 "
                         src={img}
                         alt="First slide"
-                    /></a>
+                    /></Link>
                     <Carousel.Caption >
                         <div className={`${style.textMain} `}>
                             <div className='w-100 '>
@@ -34,12 +35,13 @@ const Carusel = () => {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
-                    <img
+                <Carousel.Item >
+
+                    <Link to={'#'}> <img
                         className="d-block w-100"
                         src={img}
                         alt="Second slide"
-                    />
+                    /></Link>
 
                     <Carousel.Caption>
                         <div className={`${style.textMain}`}>
@@ -61,11 +63,11 @@ const Carusel = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img
+                    <Link to={'#'}> <img
                         className="d-block w-100"
                         src={img}
                         alt="Third slide"
-                    />
+                    /></Link>
                     <Carousel.Caption>
                         <div className={`${style.textMain}`}>
                             <div className='w-100'>

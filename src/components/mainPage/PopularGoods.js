@@ -5,6 +5,7 @@ import bed from '../../img/popularImg/image 22.png';
 import pouf from '../../img/popularImg/image 23.png';
 import chair from '../../img/popularImg/image 25.png';
 import {context} from "../utils/context";
+import {Link} from "react-router-dom";
 
 const PopularGoods = () => {
     const {windowWidth} = useContext(context);
@@ -13,33 +14,33 @@ const PopularGoods = () => {
             <h2 className={`${style.h2Text} text-center pt-5 pb-4`}>Популярные товары</h2>
             <div className='row text-center'>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0 '>
-                    <img className='col-12' src={armchair} alt='armchair'/>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло замшевое <span
-                        className={`${style.spanNumber}`}>SD-313</span>
-                        <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
+                   <Link to={`#`}> <img className='col-12' src={armchair} alt='armchair'/></Link>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло замшевое
+                        <br/>SD-313
+                    </div>
                     <p className={`${style.textPrice}`}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
-                    <img className='col-12' src={bed} alt='bed'/>
+                    <Link to={`#`}> <img className='col-12' src={bed} alt='bed'/></Link>
 
-                    <div className={`${style.textName}  mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кровать “Марсель” <span
-                        className={`${style.spanNumber}`}>SD-313</span>
-                        <span className={`${style.textNumber}  mb-2 ml-0`}>SD-313</span></div>
+                    <div className={`${style.textName}  mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кровать “Марсель”
+                        <br/> SD-313
+                    </div>
                     <p className={`${style.textPrice} mb-0`}>8 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
-                    <img className='col-12' src={pouf} alt='pouf'/>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Пуф эксклюзивный <span
-                        className={`${style.spanNumber}`}>SD-313</span>
-                        <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
+                    <Link to={`#`}> <img className='col-12' src={pouf} alt='pouf'/></Link>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Пуф эксклюзивный
+                        <br/> SD-313
+                    </div>
                     <p className={`${style.textPrice} `}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
-                    <img className='col-12' src={chair} alt='chair'/>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло кожаное <span
-                        className={`${style.spanNumber}`}>SD-313</span>
-                        <span className={`${style.textNumber} mb-2`}>SD-313</span></div>
+                    <Link to={`#`}> <img className='col-12' src={chair} alt='chair'/></Link>
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло кожаное
+                        <br/>SD-313
+                    </div>
                     <p className={`${style.textPrice} mb-0`}>8 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>
                 </div>

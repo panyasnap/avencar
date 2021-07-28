@@ -1,3 +1,4 @@
+
 .pWeigth{
     font-family: "Gilroy Ultra Light", sans-serif;
     font-weight: 400;
@@ -44,11 +45,14 @@ h2 {
     opacity: 90;
 }
 
-img {
+/*img {*/
+/*    cursor: pointer;*/
+/*}*/
+/*.noPoint{*/
+/*    cursor: unset;*/
+/*}*/
+link{
     cursor: pointer;
-}
-.noPoint{
-    cursor: unset;
 }
 
 .selectUl {
@@ -95,4 +99,115 @@ img {
     .selectUl.close {
         display: none
     }
+}
+
+/*burger*/
+.headerBurger {
+    display: block;
+    position: relative;
+    width: 24.06px;
+    height: 21.2px;
+    margin-left: 24px;
+    /*margin-top: 16px;*/
+    background: none;
+}
+.headerBurger:before,
+.headerBurger:after {
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 2.19px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+    z-index: 5;
+}
+
+.headerBurger:before {
+    top: 0
+}
+
+.headerBurger:after {
+    bottom: 0;
+
+}
+.headerBurger span {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 2.19px;
+    left: 0;
+    top: 9.2px;
+    transition: all 0.3s ease 0s;
+    padding: 0 0 0 0;
+}
+.headerBurger.active:before {
+    transform: rotate(45deg);
+    top: 10px
+}
+
+.headerBurger.active:after {
+    transform: rotate(-45deg);
+    bottom: 10px;
+
+}
+
+.headerBurger.active span {
+    transform: scale(0);
+    background: none;
+    padding: 0 0 0 0;
+}
+.headerMenu {
+    opacity: 0;
+    margin: -100% 0 0 0px;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    /*width: 100%;*/
+    height: 80%;
+    background-color: #FAFAFA;
+    z-index: 3;
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 4s ease-in-out;
+
+
+
+}
+.headerMenu.is-nav-open{
+    margin: 0 0 0 0px;
+    position: relative;
+    top: 0;
+    opacity: 1;
+    display: block;
+    transition: all 4s ease-in-out;
+    background: #4C4C4C;
+    color: #FFFFFF;
+    height: 80%;
+    animation: slideOut 1s;
+
+}
+@keyframes slideOut {
+    from {
+       opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+
+    }
+}
+.burgerUl{
+    cursor: pointer;
+
+}
+.burgerUl.active {
+    display: block
+}
+
+.burgerUl.close {
+    display: none
 }

@@ -1,0 +1,48 @@
+.burgerBackground{
+    height: 80%;
+    font-family: 'Gilroy Regular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+}
+.linkStyle{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.linkStyle:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.burgerSelect{
+    font-family: 'Gilroy Regular',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none;
+}
+.chevron{
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0 0 2px 0;
+}
+.inputBurger{
+    background-color: #4C4C4C;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 98%;
+    height: 40px;
+    background: url('/src/img/imgHeader/lupa.svg') no-repeat right;
+
+}
+.inputBurger:hover{
+    background: none;
+}

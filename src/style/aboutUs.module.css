@@ -1,0 +1,40 @@
+.imgBedWidth {
+    width: 103.37%;
+}
+
+.imgChairsWidth {
+    width: 97.4%;
+    margin-left: 3%;
+}
+.h3text{
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.textAbout {
+    font-size: 1rem;
+    font-family: "Gilroy Regular", sans-serif;
+    color: #242424;
+}
+.spanP{
+    font-size: 1rem;
+    font-family: "Gilroy Medium", sans-serif;
+    color: #242424;
+    width: 115%;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 20.8px;
+
+}
+@media (min-width: 1354px) {
+    .spanP{
+        font-size: 1rem;
+        font-family: "Gilroy Medium", sans-serif;
+        color: #242424;
+
+        text-align: justify;
+        font-weight: 400;
+        line-height: 20.8px;
+
+    }
+}
