@@ -34,6 +34,7 @@
     color: white;
     background: #4C4C4C;
     border: 0.5px solid #4C4C4C;
+    margin-bottom: 5px;
 }
 
 .btnCata2:hover {
@@ -46,6 +47,7 @@
     color: #4C4C4C;
     background: white;
     border: 0.5px solid #000000;
+    margin-bottom: 5px;
 
 }
 
@@ -63,9 +65,43 @@
 .ptextCata {
     font-family: 'Gilroy Regular', sans-serif;
     font-size: 1rem;
+    margin: 20px 0 25px 0px;
     /*padding:10px 0 16px 7px;*/
 
 }
+@media (min-width: 1421px) and (max-width: 1790px){
+    .ptextCata {
+        font-family: 'Gilroy Regular', sans-serif;
+        font-size: 1rem;
+        margin: 7px 0 15px 0px;
+        /*padding:10px 0 16px 7px;*/
+
+    }
+    .btnCata1 {
+
+        width: 196px;
+        height: 50px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+
+    .btnCata1:hover {
+
+        width: 196px;
+        height: 50px;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: white;
+        background-color: #4C4C4C;
+        margin-bottom: 5px;
+
+    }
+}
+
 
 @media (max-width: 1299px) {
     .h3textCata {
@@ -130,6 +166,13 @@
         font-size: 0.8rem;
         background: white;
         margin-top: -10px;
+    }
+    .ptextCata {
+        font-family: 'Gilroy Regular', sans-serif;
+        font-size: 0.7rem;
+        margin: 7px 0 6px 0px;
+        /*padding:10px 0 16px 7px;*/
+
     }
 }
 

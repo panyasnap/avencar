@@ -15,15 +15,15 @@ const LastWorks = () => {
             <div className='row text-center'>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0 '>
                     <Link to={`#`}>  <img className='col-12' src={armchair} alt='armchair'/></Link>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Диван эксклюзивный
-                        <br/> SD-313
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-0`}>Диван эксклюзивный
+                       SD-313
                     </div>
                     <p className={`${style.textPrice}`}>10 000 руб.</p>
                 </div>
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
                     <Link to={`#`}> <img className='col-12' src={chair} alt='chair'/></Link>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кресло замшевое
-                        <br/> SD-313
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-0`}>Кресло замшевое
+                       SD-313
                     </div>
                     <p className={`${style.textPrice} mb-0 align-self-end`}>8 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>
@@ -31,16 +31,16 @@ const LastWorks = () => {
                 <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
                     <div className='align-content-between h-100'>
                         <Link to={`#`}> <img className='col-12' src={bed} alt='bed'/></Link>
-                        <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Кровать “Марсель”
-                            <br/> SD-313
+                        <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-0`}>Кровать “Марсель”
+                            SD-313
                         </div>
                         <p className={`${style.textPrice} `}>8 000 руб.</p>
                     </div>
                 </div>
-                <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0'>
+                <div className='col-lg-3 col-xl-3 col-sm-6 col-6 p-0 '>
                     <Link to={`#`}><img className='col-12' src={pouf} alt='pouf'/></Link>
-                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-2`}>Пуф эксклюзивный
-                        <br/> SD-313
+                    <div className={`${style.textName} mt-3 mb-0 mb-lg-0 mb-sm-0`}>Пуф эксклюзивный
+                        SD-313
                     </div>
                     <p className={`${style.textPrice} mb-0`}>10 000 руб.</p>
                     <p className={`${style.textSale}`}>10 000 руб.</p>

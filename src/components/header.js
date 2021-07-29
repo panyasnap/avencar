@@ -68,7 +68,7 @@ const Header = () => {
 
                     </div>
 
-                    <div className={page === 'main' ? `${style.linkHover} ml-5 ` : ' pb-3 ml-5'}>
+                    <div className={page === 'main' ? `${style.linkHover} pb-3 ml-5 ` : ' pb-3 ml-5'}>
                         <Link onClick={() => setPage('main')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
                               to={`/${mainPage}`
@@ -76,13 +76,13 @@ const Header = () => {
                             Главная</Link>
                         {/*<hr className={page === 'main' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'about' ? `${style.linkHover}` : ' pb-3'}>
+                    <div className={page === 'about' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                         <Link to={`/${aboutUs}`} onClick={() => setPage('about')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                             О нас</Link>
                         {/*<hr className={page === 'about' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'furniture' ? `${style.linkHover}` : ' pb-3'}>
+                    <div className={page === 'furniture' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                         <Link onClick={() => setPage('furniture')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
                               to={`/${furniture}`}>
@@ -90,20 +90,20 @@ const Header = () => {
                         {/*<hr className={page === 'furniture' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
 
-                    <div className={page === 'design' ? `${style.linkHover}` : ' pb-3'}>
+                    <div className={page === 'design' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                         <Link to={`/${design}`} onClick={() => setPage('design')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>{showInput ?
                             'Услуги' : ' Дизайн интерьера'}</Link>
                         {/*<hr className={page === 'design' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
-                    <div className={page === 'portfolio' ? `${style.linkHover}` : ' pb-3'}>
+                    <div className={page === 'portfolio' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                         <Link to={'#'} onClick={() => setPage('portfolio')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}>
                             Портфолио</Link>
                         {/*<hr className={page === 'portfolio' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv}` : null}>
-                        <div className={page === 'blog' ? `${style.linkHover}` : ' pb-3'}>
+                        <div className={page === 'blog' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('blog')}
                                   className={`${style.linkStyle}`}>
                                 Блог</Link>
@@ -111,7 +111,7 @@ const Header = () => {
                         {/*<hr className={page === 'blog' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv}` : null}>
-                        <div className={page === 'sale' ? `${style.linkHover}` : ' pb-3'}>
+                        <div className={page === 'sale' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('sale')}
                                   className={`${style.linkStyle}`}>
                                 Акции</Link>
@@ -119,7 +119,7 @@ const Header = () => {
                         {/*<hr className={page === 'sale' ? `${style.hrStyleClick} p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>
                     <div className={showInput ? `${style.displayDiv} mr-3` : ` `}>
-                        <div className={page === 'contact' ? `${style.linkHover}` : ' pb-3'}>
+                        <div className={page === 'contact' ? `${style.linkHover} pb-3 ` : ' pb-3'}>
                             <Link to={'#'} onClick={() => setPage('contact')}
                                   className={`${style.linkStyle}`}>
                                 Контакты</Link></div>

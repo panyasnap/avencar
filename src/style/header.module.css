@@ -110,7 +110,7 @@ select {
 /*    display: none*/
 /*}*/
 .linkHover{
-    font-family: 'Gilroy Medium', sans-serif;
+    /*font-family: 'Gilroy Medium', sans-serif;*/
     font-weight: 400;
     font-size: 1rem;
     padding-bottom: 17px;
@@ -187,13 +187,13 @@ select {
         text-transform: uppercase;
         font-family: 'Gilroy Regular', serif;
         font-weight: 400;
-        font-size: 80%;
+        font-size: 12px;
 
     }
     .linkHover{
         font-family: 'Gilroy Medium', sans-serif;
         font-weight: 400;
-        font-size: 99%;
+        font-size: 12px;
         /*padding-bottom: 1px;*/
     }
 }

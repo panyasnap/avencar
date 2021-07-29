@@ -20,7 +20,8 @@
     font-family: "Gilroy Regular", sans-serif;
     font-size: 1.25rem;
     min-height: 69px;
-    padding: 0 16px 0 16px;
+    padding: 0 13% 0 13%;
+    align-items: center;
 }
 
 .textNumber {
@@ -115,7 +116,8 @@
     .textName {
         font-family: "Gilroy Regular", sans-serif;
         font-size: 0.875rem;
-        min-height: 57px;
+        min-height: 61px;
+        padding: 0 13px 0 9px;
     }
 
     .textNumber {
@@ -191,7 +193,7 @@
 
 }
 
-@media (min-width: 551px)and (max-width: 1000px) {
+@media (min-width: 551px)and (max-width: 1191px) {
     .h2Text {
         font-weight: 400;
         font-size: 2.5rem;
@@ -199,12 +201,12 @@
         font-style: normal;
     }
 
-    .textName {
-        font-family: "Gilroy Regular", sans-serif;
-        /*font-size:0.875rem;*/
-        background: none;
-        min-height: 30px;
-    }
+    /*.textName {*/
+    /*    font-family: "Gilroy Regular", sans-serif;*/
+    /*    !*font-size:0.875rem;*!*/
+    /*    background: none;*/
+    /*    min-height: 30px;*/
+    /*}*/
 
     .textSale {
         display: none;
@@ -230,5 +232,22 @@
         display: unset;
         background: none;
         padding: 0 0 0 0;
+    }
+    .textName {
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 20px;
+        /*min-height: 69px;*/
+        padding:0px 8% 0 10%;
+        align-items: center;
+        min-height: 27px;
+    }
+}
+@media (min-width: 1900px) {
+    .textName {
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 1.25rem;
+        min-height: 69px;
+        padding: 0 38px 0 35px;
+        align-items: center;
     }
 }
