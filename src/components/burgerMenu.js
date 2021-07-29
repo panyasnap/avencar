@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import style from '../style.mobil/burger.module.css'
 import {BsChevronDown, BsChevronUp} from "react-icons/bs";
-import {mainPage} from "./utils/constans";
+import {aboutUs, mainPage} from "./utils/constans";
 import {Link} from "react-router-dom";
 
 const BurgerMenu = (props) => {
@@ -22,7 +22,9 @@ const BurgerMenu = (props) => {
                             props.closeBurgerMenu()
                         }} className='mb-4'><Link className={`${style.linkStyle}`} to={`/${mainPage}`}>Главная</Link>
                         </div>
-                        <div className='mb-4'><Link to={'#'} className={`${style.linkStyle}`}>О нас</Link></div>
+                        <div onClick={() => {
+                            props.closeBurgerMenu()
+                        }} className='mb-4'><Link to={`/${aboutUs}`} className={`${style.linkStyle}`}>О нас</Link></div>
                         <div className='mb-4'><Link to={`#`} className={`${style.linkStyle}`}>Мебель</Link></div>
                         <div onClick={() => setClose(!open)} className='mb-4'><Link to={`#`} className={`${style.linkStyle}`}>дизайн интерьера</Link>
                             {!open ?

@@ -46,8 +46,10 @@ const Footer = () => {
                                         <div className='m-1 pl-3'><Link to={`#`}> <img className='w-100 ' src={insta}
                                                                                        alt='inst'/></Link></div>
                                         <div className='m-1'><Link to={'#'}> <img src={vk} alt='vk'/></Link></div>
-                                        <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb} alt='fb'/></Link></div>
-                                        <div className='m-1'> <Link to={'#'}><img className='w-100' src={pin} alt='pin'/></Link></div>
+                                        <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb} alt='fb'/></Link>
+                                        </div>
+                                        <div className='m-1'><Link to={'#'}><img className='w-100' src={pin} alt='pin'/></Link>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -154,7 +156,7 @@ const Footer = () => {
 
                         <div className='container'>
 
-                            <div className='pt-5 '>
+                            <div className='pt-5 pb-4'>
                                 <div className='w-100'>
                                     <img className={`${style.imgLogo} w-100 justify-content-center pb-5`} src={logo}
                                          alt='logo'/></div>
@@ -180,11 +182,14 @@ const Footer = () => {
                                         <p className={`${style.textAddress}`}>(по предварительной записи)</p>
 
                                         <div className='row'>
-                                            <div className='m-1 pl-3'><Link to={`#`}> <img className='w-100 ' src={insta}
-                                                                                            alt='inst'/></Link></div>
+                                            <div className='m-1 pl-3'><Link to={`#`}> <img className='w-100 '
+                                                                                           src={insta}
+                                                                                           alt='inst'/></Link></div>
                                             <div className='m-1'><Link to={'#'}> <img src={vk} alt='vk'/></Link></div>
-                                            <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb} alt='fb'/></Link></div>
-                                           <div className='m-1'> <Link to={'#'}><img className='w-100' src={pin} alt='pin'/></Link></div>
+                                            <div className='m-1'><Link to={'#'}> <img className='w-100' src={fb}
+                                                                                      alt='fb'/></Link></div>
+                                            <div className='m-1'><Link to={'#'}><img className='w-100' src={pin}
+                                                                                     alt='pin'/></Link></div>
                                         </div>
                                     </div>
                                 </div>
