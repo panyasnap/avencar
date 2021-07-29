@@ -14,7 +14,7 @@ const Carusel = () => {
                         src={img}
                         alt="First slide"
                     /></Link>
-                    <Carousel.Caption >
+                    <Carousel.Caption>
                         <div className={`${style.textMain} `}>
                             <div className='w-100 '>
                                 <h3 className={`${style.h3text} `}>
@@ -35,7 +35,7 @@ const Carusel = () => {
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item >
+                <Carousel.Item>
 
                     <Link to={'#'}> <img
                         className="d-block w-100"
@@ -72,7 +72,7 @@ const Carusel = () => {
                         <div className={`${style.textMain}`}>
                             <div className='w-100'>
                                 <h3 className={`${style.h3text}`}>
-                                    <div><span >Дизайн, изготовление мебели</span></div>
+                                    <div><span>Дизайн, изготовление мебели</span></div>
                                     <span> и интерьера на заказ
                                 </span></h3>
                             </div>

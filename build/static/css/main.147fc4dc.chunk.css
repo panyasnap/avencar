@@ -1,0 +1,2592 @@
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap);
+
+
+@font-face {
+    font-family: 'Gilroy Ultra Light';
+    src: url('../media/Gilroy-UltraLight.e7028e6c.eot');
+    src: url('../media/Gilroy-UltraLight.e7028e6c.eot?#iefix') format('embedded-opentype'),
+    url('../media/Gilroy-UltraLight.d23a0edf.woff') format('woff'),
+    url('../media/Gilroy-UltraLight.68e17ccd.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy Medium";
+    src: url("../media/Gilroy-Medium.b84941b7.eot");
+    src: url("../media/Gilroy-Medium.b84941b7.eot?#iefix") format("embedded-opentype"),
+    url("../media/Gilroy-Medium.2bc7f5d7.woff") format("woff"),
+    url("../media/Gilroy-Medium.f9f832b0.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "Gilroy Regular";
+    src: url("../media/Gilroy-Regular.1d051d9d.eot");
+    src: url("../media/Gilroy-Regular.1d051d9d.eot?#iefix") format("embedded-opentype"),
+    url("../media/Gilroy-Regular.31d54a4b.woff") format("woff"),
+    url("../media/Gilroy-Regular.b91b0127.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+.pWeigth {
+    font-family: "Gilroy Ultra Light", sans-serif;
+    font-weight: 400
+}
+
+body {
+    font-family: "Gilroy Regular", sans-serif
+}
+
+h2, h3 {
+    font-family: "Cormorant Garamond", serif
+}
+
+.carouselStyle .carousel-indicators {
+    display: none
+}
+
+.carouselStyle .carousel-control-next-icon {
+    background-image: url("../media/Vector.9c750cfc.svg");
+    width: 14px;
+    height: 29px;
+    margin-left: 53%
+}
+
+.carouselStyle .carousel-control-prev-icon {
+    background-image: url("../media/Vector (1).a5b92c63.svg");
+    width: 14px;
+    height: 29px;
+    margin-right: 53%
+}
+
+.carousel-control-next, .carousel-control-prev, .carouselStyle .carousel-control-next, .carouselStyle .carousel-control-prev {
+    opacity: 1
+}
+
+link {
+    cursor: pointer
+}
+
+.selectUl {
+    font-weight: 400;
+    padding-left: 1rem;
+    font-size: 1rem;
+    color: silver;
+    width: 196px;
+    height: 93px;
+    background-color: #5c5c5c;
+    position: absolute;
+    top: 20px;
+    z-index: 2
+}
+
+.selectUl.active {
+    display: block
+}
+
+.selectUl.close {
+    display: none
+}
+
+@media (max-width: 1314px) {
+    .selectUl {
+        font-weight: 400;
+        padding-left: 1rem;
+        font-size: 1rem;
+        color: silver;
+        width: 110px;
+        height: 110px;
+        background-color: #5c5c5c;
+        position: absolute;
+        top: 20px;
+        z-index: 2;
+        -webkit-text-decoration-line: underline;
+        text-decoration-line: underline
+    }
+
+    .selectUl.active {
+        display: block
+    }
+
+    .selectUl.close {
+        display: none
+    }
+}
+
+.headerBurger {
+    display: block;
+    position: relative;
+    width: 24.06px;
+    height: 21.2px;
+    margin-left: 24px;
+    background: none
+}
+
+.headerBurger:after, .headerBurger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2.19px;
+    left: 0;
+    transition: all .3s ease 0s;
+    z-index: 5
+}
+
+.headerBurger:before {
+    top: 0
+}
+
+.headerBurger:after {
+    bottom: 0
+}
+
+.headerBurger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2.19px;
+    left: 0;
+    top: 9.2px;
+    transition: all .3s ease 0s;
+    padding: 0
+}
+
+.headerBurger.active:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 10px
+}
+
+.headerBurger.active:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    bottom: 10px
+}
+
+.headerBurger.active span {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    background: none;
+    padding: 0
+}
+
+.headerMenu {
+    opacity: 0;
+    margin: -100% 0 0;
+    position: fixed;
+    left: 0;
+    background-color: #fafafa;
+    z-index: 3;
+    display: flex;
+    font-size: 1.3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+.headerMenu, .headerMenu.is-nav-open {
+    top: 0;
+    height: 80%;
+    transition: all 4s ease-in-out
+}
+
+.headerMenu.is-nav-open {
+    margin: 0;
+    position: relative;
+    opacity: 1;
+    display: block;
+    background: #4c4c4c;
+    color: #fff;
+    -webkit-animation: slideOut 1s;
+    animation: slideOut 1s
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.burgerUl {
+    cursor: pointer
+}
+
+.burgerUl.active {
+    display: block
+}
+
+.burgerUl.close {
+    display: none
+}
+
+.header_headerBack__-7i_v {
+    height: 122px;
+    background-color: #4c4c4c;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Gilroy Regular", serif;
+    font-size: 1rem;
+    font-weight: 400
+}
+
+.header_selectLine__3OYWY {
+    all: unset;
+    padding-top: 3rem;
+    line-height: 2
+}
+
+.header_headerInputBack__1Drs- {
+    color: #4c4c4c;
+    height: 122px;
+    background: #2e2e2e;
+    text-transform: uppercase;
+    font-family: "Gilroy Regular", serif;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.header_inputHeader__2gY1J {
+    transition: all .5s linear;
+    width: 292px;
+    height: 42px;
+    background-color: #4c4c4c;
+    border: 1px solid #fff;
+    color: #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    overflow: hidden
+}
+
+.header_divInputHeader__38oyW {
+    transition: all 4s linear
+}
+
+.header_selectHeader__hYmiR {
+    cursor: pointer;
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem;
+    position: relative;
+    display: flex;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-transform: none;
+    text-underline-offset: 3px
+}
+
+.header_linkHover__STUtL {
+    font-family: "Gilroy Medium", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-bottom: 17px;
+    text-underline-offset: 6px;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline
+}
+
+.header_selectLI__3_FU6 {
+    margin-bottom: 10px;
+    list-style-type: none;
+    color: #fff
+}
+
+.header_selectLI__3_FU6:first-child {
+    margin-top: 15px;
+    color: #fff;
+    opacity: .5
+}
+
+.header_selectLISpb__3dp12 {
+    margin-bottom: 10px;
+    list-style-type: none;
+    color: #fff;
+    opacity: .5
+}
+
+.header_selectLISpb__3dp12:first-child {
+    margin-top: 15px;
+    color: #fff;
+    opacity: unset
+}
+
+.header_selectLI__3_FU6:hover {
+    list-style-type: none
+}
+
+.header_selectSpan__1m70s {
+    border-bottom: 1px solid #fff;
+    background: none;
+    padding: 0
+}
+
+.header_selectSpan__1m70s:hover {
+    padding: 0;
+    background: none;
+    color: #fff
+}
+
+.header_iconSize__A7hz8, .header_selectDarkiconSize__pu7We {
+    font-size: .5rem;
+    font-weight: 700;
+    font-family: "Gilroy Regular", sans-serif
+}
+
+@media (max-width: 1299px) {
+    .header_headerBack__-7i_v {
+        height: 122px;
+        background-color: #4c4c4c;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Gilroy Regular", serif;
+        font-weight: 400;
+        font-size: 80%
+    }
+
+    .header_linkHover__STUtL {
+        font-family: "Gilroy Medium", sans-serif;
+        font-weight: 400;
+        font-size: 99%
+    }
+}
+
+.header_imgInput__3Yy6M {
+    height: 25px;
+    width: 25px;
+    padding-top: 10px;
+    cursor: pointer
+}
+
+.header_imgSize__3nrvY {
+    height: 6rem
+}
+
+.header_imgDark__1vgHX {
+    position: relative
+}
+
+.header_divDark__1iFel {
+    position: absolute;
+    height: 100%;
+    width: 160px;
+    background-color: #2e2e2e;
+    opacity: .8
+}
+
+.header_selectLine__3OYWY {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline
+}
+
+.header_selectDark__2_AdD {
+    background-color: #2e2e2e;
+    color: #4c4c4c
+}
+
+.header_selectDarkInput__1-9fN, .header_selectDarkText__1kbKs {
+    background-color: #2e2e2e;
+    color: #4c4c4c;
+    text-transform: none;
+    pointer-events: none
+}
+
+.header_selectDarkText__1kbKs {
+    text-underline-offset: 3px;
+    font-size: .875rem
+}
+
+.header_selectDarkText__1kbKs, select {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline
+}
+
+select {
+    cursor: pointer;
+    background-color: #4c4c4c;
+    color: #fff;
+    border: #4c4c4c
+}
+
+.header_displayDiv__3pu2r {
+    height: 42px;
+    width: .4px;
+    opacity: 0;
+    margin-right: -35px
+}
+
+.header_linkStyle__EsUhh {
+    color: #fff;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none
+}
+
+.header_linkStyle__EsUhh:hover {
+    color: #fff;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-underline-offset: 6px
+}
+
+.header_linkStyleDark__2DtZr {
+    color: #4c4c4c;
+    pointer-events: none
+}
+
+.header_linkStyleDark__2DtZr:hover {
+    color: #4c4c4c
+}
+
+.footer_footerBack__1dwjT {
+    background-color: #242424;
+    color: #fff;
+    font-family: "Gilroy Medium", serif;
+    font-size: 90%
+}
+
+.footer_hrLine__2rjB0 {
+    color: #fff;
+    border-top: 2px solid hsla(0, 0%, 100%, 0)
+}
+
+.footer_textHelp__1nbum, .footer_textHelpBottom__2Fz2K {
+    font-family: "Gilroy Ultra Light", sans-serif;
+    font-style: normal;
+    font-size: .75rem;
+    font-weight: 400
+}
+
+.footer_textH2__1sKte {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-style: normal;
+    border-color: #fff;
+    border-bottom: 1px;
+    font-size: .875rem
+}
+
+.footer_textServices__2qBmP, .footer_textServicesFurniture__2Is2t {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    font-family: "Gilroy Regular", serif;
+    line-height: 147%
+}
+
+.footer_textServicesFurniture__2Is2t {
+    padding-top: 1.4px
+}
+
+.footer_line23__39OMj {
+    font-weight: 400
+}
+
+.footer_textPhoneRing__3q8Do {
+    font-family: "Gilroy Regular", sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-size: 1rem
+}
+
+.footer_textAddressBold__1iUAI {
+    background: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: .875rem
+}
+
+.footer_textAddress__3B9Y5 {
+    font-weight: 500;
+    font-size: .875rem
+}
+
+.footer_textAddress__3B9Y5, .footer_textPhone__1nTgd {
+    font-family: "Gilroy Ultra Light", sans-serif;
+    font-style: normal
+}
+
+.footer_textPhone__1nTgd {
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.footer_textInfoPhone__9kdKL {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem
+}
+
+.footer_textInfo__2cV1Q, .footer_textInfo__2cV1Q:hover {
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none
+}
+
+.footer_textInfo__2cV1Q:hover {
+    text-decoration: underline
+}
+
+hr {
+    border: none;
+    background-color: #fff;
+    color: #fff;
+    height: 2px;
+    justify-items: left
+}
+
+.footer_imgLogo__2VzcS {
+    height: 137px
+}
+
+.footer_marginServices__4IyjT {
+    margin-top: 0
+}
+
+@media (max-width: 1199px) {
+    .footer_marginServices__4IyjT {
+        padding-top: 20px
+    }
+
+    .footer_textH2__1sKte {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-style: normal;
+        border-color: #fff;
+        border-bottom: 1px;
+        font-size: .7rem
+    }
+}
+
+.HeaderMob_headerBack__1gVni {
+    height: 69px;
+    background: #4c4c4c;
+    z-index: 4
+}
+
+/*    !*margin-top: 16px;*!*/
+.burger_burgerBackground__3Z6Br {
+    height: 80%;
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase
+}
+
+.burger_linkStyle__1bNci, .burger_linkStyle__1bNci:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+.burger_burgerSelect__3xrqx {
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: none
+}
+
+.burger_chevron__WJgT5 {
+    font-size: .7rem;
+    font-weight: 700;
+    padding: 0 0 2px
+}
+
+.burger_inputBurger__2vqJb {
+    background-color: #4c4c4c;
+    border: 1px solid #fff;
+    color: #fff;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    width: 98%;
+    height: 40px;
+    background: url(../media/lupa.0856905e.svg) no-repeat 100%
+}
+
+.burger_inputBurger__2vqJb:hover {
+    background: none
+}
+
+span {
+    padding: 0 20px 0 0;
+    background-color: rgba(0, 0, 0, .5);
+    background-repeat: no-repeat
+}
+
+mark {
+    color: #fff
+}
+
+.CaruselMobil_buttonCaruselMob__2t_Jq {
+    all: unset;
+    text-align: center;
+    font-family: "Gilroy Ultra Light", sans-serif;
+    text-transform: uppercase;
+    font-size: .625rem;
+    font-weight: 400;
+    width: 162px;
+    height: 30px;
+    align-items: flex-start;
+    background: #242424;
+    color: #fff;
+    margin-bottom: 11px
+}
+
+.CaruselMobil_pspanMob__1vy3n {
+    padding-bottom: 4px
+}
+
+.CaruselMobil_ptextMob__vCjZl {
+    line-height: 140%;
+    font-family: "Gilroy Ultra Light", sans-serif;
+    color: #fff;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    padding: 5px 0 0;
+    font-size: .563rem
+}
+
+.CaruselMobil_h3textMob__dKtsO {
+    line-height: 140%;
+    font-family: "Cormorant Garamond", serif;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .938rem;
+    padding-top: 3rem
+}
+
+@media (max-width: 365px) {
+    .CaruselMobil_buttonCaruselMob__2t_Jq {
+        all: unset;
+        font-family: "Gilroy Ultra Light", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: .6rem;
+        font-weight: 400;
+        width: 162px;
+        height: 30px;
+        align-items: flex-start;
+        background: #242424;
+        color: #fff;
+        margin-bottom: 11px
+    }
+
+    .CaruselMobil_pspanMob__1vy3n {
+        padding-top: 3px;
+        padding-bottom: 3.2px;
+        line-height: 158%
+    }
+
+    .CaruselMobil_ptextMob__vCjZl {
+        font-family: "Gilroy Ultra Light", sans-serif;
+        color: #fff;
+        text-align: left;
+        font-style: normal;
+        font-weight: 400;
+        padding: 5px 0 0;
+        font-size: .6rem
+    }
+
+    .CaruselMobil_h3textMob__dKtsO {
+        font-family: "Cormorant Garamond", serif;
+        color: #fff;
+        text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: .8rem;
+        padding-top: 1rem
+    }
+
+    span {
+        padding: 0 20px 0 0;
+        background-color: rgba(0, 0, 0, .5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 1
+    }
+
+    .CaruselMobil_h3spanMob__scDMH, .CaruselMobil_spanMob__3Sudg {
+        padding: .8px 20px;
+        background-color: rgba(0, 0, 0, .5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%
+    }
+}
+
+@media (min-width: 366px) and (max-width: 766px) {
+    .CaruselMobil_h3spanMob__scDMH {
+        padding: 1.75px 20px;
+        -webkit-padding: 1px 20px 1px 20px;
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 143%
+    }
+
+    .CaruselMobil_pspanMob__1vy3n {
+        padding-top: 3px;
+        padding-bottom: 2px;
+        line-height: 178%
+    }
+
+    .CaruselMobil_spanMob__3Sudg {
+        padding: .8px 20px;
+        -webkit-padding: 0 20px 0 20px;
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%
+    }
+
+    .CaruselMobil_ptextMob__vCjZl {
+        font-family: "Gilroy Regular", sans-serif;
+        color: #fff;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        padding: .6rem 0 .3rem;
+        font-size: .563rem
+    }
+}
+
+@media (min-width: 767px) {
+    .CaruselMobil_buttonCaruselMob__2t_Jq {
+        all: unset;
+        text-align: center;
+        font-family: "Gilroy Ultra Light", sans-serif;
+        text-transform: uppercase;
+        font-size: .75rem;
+        font-weight: 400;
+        width: 205px;
+        height: 40px;
+        align-items: flex-start;
+        background: #242424;
+        color: #fff;
+        margin-bottom: 11px
+    }
+
+    .CaruselMobil_pspanMob__1vy3n {
+        padding-bottom: 3px;
+        line-height: 140%
+    }
+
+    .CaruselMobil_ptextMob__vCjZl {
+        font-family: "Gilroy Regular", sans-serif;
+        color: #fff;
+        text-align: left;
+        font-style: normal;
+        font-weight: 500;
+        padding: 1.6rem 0 1.3rem;
+        font-size: 1rem
+    }
+
+    .CaruselMobil_h3textMob__dKtsO {
+        font-family: "Cormorant Garamond", serif;
+        color: #fff;
+        text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.875rem;
+        padding-top: 17rem
+    }
+
+    .CaruselMobil_h3spanMob__scDMH {
+        padding: 4.6px 20px .2px
+    }
+
+    .CaruselMobil_h3spanMob__scDMH, .CaruselMobil_spanMob__3Sudg {
+        background-color: rgba(0, 0, 0, .5);
+        background-repeat: no-repeat;
+        width: 120%;
+        line-height: 140%
+    }
+
+    .CaruselMobil_spanMob__3Sudg {
+        padding: 1.95px 20px
+    }
+}
+
+.CatalogMobil_btnCata1__3eZyh {
+    all: unset;
+    text-align: center;
+    width: 162px;
+    height: 30px;
+    border: .5px solid #000;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: #fff;
+    font-size: .7rem
+}
+
+.CatalogMobil_h3text__3vX1D {
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400
+}
+
+.CatalogMobil_ptext__3D4FU {
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .875rem
+}
+
+.CatalogMobil_btnCata2__Q2y1E {
+    all: unset;
+    text-align: center;
+    text-transform: uppercase;
+    width: 162px;
+    height: 30px;
+    color: #fff;
+    font-weight: 400;
+    font-size: .7rem;
+    background: #4c4c4c
+}
+
+.CatalogMobil_ptextTablet__3am8j {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: .875rem
+}
+
+.CatalogMobil_btnTablet1__-ma1S, .CatalogMobil_btnTablet2__Q_dqN {
+    all: unset;
+    text-align: center;
+    width: 205px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: .75rem
+}
+
+.CatalogMobil_btnTablet1__-ma1S {
+    border: .5px solid #000;
+    box-sizing: border-box;
+    background-color: #fff
+}
+
+.CatalogMobil_btnTablet2__Q_dqN {
+    color: #fff;
+    font-weight: 400;
+    background: #4c4c4c
+}
+
+.CatalogMobil_h3Tablet__37pb0 {
+    font-weight: 400;
+    font-size: 1.875rem
+}
+
+.Carusel_textMain__2mCXH {
+    text-align: left;
+    cursor: pointer
+}
+
+.Carusel_ptext__YZoKV {
+    cursor: unset;
+    font-family: "Gilroy Regular", sans-serif;
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px 0 0
+}
+
+.Carusel_h3text__3xZaf {
+    cursor: unset;
+    font-family: "Cormorant Garamond", serif;
+    color: #fff;
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.188rem;
+    text-transform: uppercase
+}
+
+.Carusel_pspan__1vmUT {
+    padding: 4.3px 20px 6px
+}
+
+span {
+    padding: 10px 20px 7px;
+    background: rgba(0, 0, 0, .5);
+    width: 120%;
+    line-height: 1.7
+}
+
+.Carusel_buttonCarusel__T129w, .Carusel_buttonCarusel__T129w:hover {
+    all: unset;
+    text-align: center;
+    font-family: "Gilroy Regular", sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 19.125rem;
+    height: 3.125rem;
+    align-items: flex-start
+}
+
+.Carusel_buttonCarusel__T129w {
+    background: #242424;
+    color: #fff;
+    border: .5px solid #242424
+}
+
+.Carusel_buttonCarusel__T129w:hover {
+    cursor: pointer;
+    border: .5px solid #000;
+    background: #ebebeb;
+    color: #000
+}
+
+@media (min-width: 1023px) and (max-width: 1120px) {
+    .Carusel_ptext__YZoKV {
+        font-family: "Gilroy Regular", sans-serif;
+        color: #fff;
+        font-size: 1rem;
+        text-align: left;
+        font-style: normal;
+        font-weight: 400;
+        padding: 5px 0 0
+    }
+
+    .Carusel_h3text__3xZaf {
+        font-family: "Cormorant Garamond", serif;
+        color: #fff;
+        text-align: left;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase
+    }
+
+    .Carusel_pspan__1vmUT {
+        padding-bottom: 3px
+    }
+
+    span {
+        padding: 6px 20px 7px;
+        background: rgba(0, 0, 0, .5);
+        width: 120%;
+        line-height: 1.6
+    }
+}
+
+@media (min-width: 1900px) {
+    .Carusel_buttonCarusel__T129w, .Carusel_buttonCarusel__T129w:hover {
+        all: unset;
+        text-align: center;
+        font-family: "Gilroy Regular", sans-serif;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+        width: 306px;
+        height: 50px;
+        align-items: flex-start;
+        border: .5px solid #242424
+    }
+
+    .Carusel_buttonCarusel__T129w {
+        background: #242424;
+        color: #fff
+    }
+
+    .Carusel_buttonCarusel__T129w:hover {
+        background: #ebebeb;
+        color: #000
+    }
+
+    .Carusel_pspan__1vmUT {
+        padding-bottom: .46%
+    }
+
+    .Carusel_ptext__YZoKV {
+        font-family: "Gilroy Regular", sans-serif;
+        color: #fff;
+        text-align: left;
+        font-style: normal;
+        font-weight: 400;
+        padding: 5px 0 0;
+        font-size: 1.25rem
+    }
+
+    .Carusel_h3text__3xZaf {
+        font-family: "Cormorant Garamond", serif;
+        color: #fff;
+        text-align: left;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2.188rem
+    }
+
+    span {
+        padding: 8.77px 20px 7.83px;
+        background: rgba(0, 0, 0, .5);
+        width: 120%;
+        line-height: 1.7
+    }
+}
+
+.cata_backCata__3ZQgu {
+    background: #e5e5e5
+}
+
+.cata_btnCata1__1whvJ {
+    background-color: #fff
+}
+
+.cata_btnCata1__1whvJ, .cata_btnCata1__1whvJ:hover {
+    width: 196px;
+    height: 50px;
+    border: .5px solid #000;
+    box-sizing: border-box;
+    text-transform: uppercase
+}
+
+.cata_btnCata1__1whvJ:hover {
+    color: #fff;
+    background-color: #4c4c4c
+}
+
+.cata_btnCata2__feSQW, .cata_btnCata2__feSQW:hover {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    width: 196px;
+    height: 50px
+}
+
+.cata_btnCata2__feSQW {
+    color: #fff;
+    background: #4c4c4c;
+    border: .5px solid #4c4c4c
+}
+
+.cata_btnCata2__feSQW:hover {
+    color: #4c4c4c;
+    background: #fff;
+    border: .5px solid #000
+}
+
+.cata_h3textCata__34iku, .cata_h3textDesign__2dctB {
+    font-size: 2.188rem;
+    line-height: 35px
+}
+
+.cata_ptextCata__3WtrM {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1rem
+}
+
+@media (max-width: 1299px) {
+    .cata_h3textCata__34iku, .cata_h3textDesign__2dctB {
+        font-size: 1.5rem;
+        line-height: 24px
+    }
+
+    .cata_ptextCata__3WtrM {
+        font-size: .8rem
+    }
+
+    .cata_btnCata1__1whvJ {
+        background-color: #fff
+    }
+
+    .cata_btnCata1__1whvJ, .cata_btnCata1__1whvJ:hover {
+        width: 100px;
+        height: 35px;
+        border: .5px solid #000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        font-size: .8rem;
+        margin-top: -10px
+    }
+
+    .cata_btnCata1__1whvJ:hover {
+        color: #fff;
+        background-color: #4c4c4c
+    }
+
+    .cata_btnCata2__feSQW {
+        color: #fff;
+        background: #4c4c4c
+    }
+
+    .cata_btnCata2__feSQW, .cata_btnCata2__feSQW:hover {
+        text-transform: uppercase;
+        width: 100px;
+        height: 35px;
+        font-size: .8rem;
+        margin-top: -10px
+    }
+
+    .cata_btnCata2__feSQW:hover {
+        border: .5px solid #000;
+        color: #000;
+        background: #fff
+    }
+}
+
+@media (max-width: 1421px) and (min-width: 1298px) {
+    .cata_h3textCata__34iku, .cata_h3textDesign__2dctB {
+        font-size: 1.8rem;
+        line-height: 35px
+    }
+
+    .cata_ptextCata__3WtrM {
+        font-size: 1rem
+    }
+
+    .cata_btnCata1__1whvJ {
+        background-color: #fff
+    }
+
+    .cata_btnCata1__1whvJ, .cata_btnCata1__1whvJ:hover {
+        width: 200px;
+        height: 45px;
+        border: .5px solid #000;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        font-size: 1rem
+    }
+
+    .cata_btnCata1__1whvJ:hover {
+        color: #fff;
+        background-color: #4c4c4c
+    }
+
+    .cata_btnCata2__feSQW {
+        text-transform: uppercase;
+        width: 200px;
+        height: 45px;
+        color: #fff;
+        font-size: 1rem;
+        background: #4c4c4c
+    }
+
+    .cata_btnCata2__feSQW:hover {
+        text-transform: uppercase;
+        border: .5px solid #000;
+        width: 100px;
+        height: 35px;
+        color: #000;
+        font-size: 1rem;
+        background: #fff
+    }
+}
+
+.categories_backCategories__2SpdT {
+    background-image: url('../media/image 64.74409156.svg');
+    background-color: #ebebeb
+}
+
+.categories_textConsultation__2EvEC {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400
+}
+
+.categories_h2Text__hxiIv {
+    font-size: 3.125rem;
+    font-weight: 500
+}
+
+.categories_h2TextConsultation__8OS8H {
+    font-size: 3.125rem;
+    font-weight: 700
+}
+
+.categories_imgSofa__1L9LD {
+    position: relative
+}
+
+.categories_textSofa__fikZc {
+    top: 18%
+}
+
+.categories_textCupboard__2SmPg, .categories_textSofa__fikZc {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.categories_textCupboard__2SmPg {
+    top: 67%
+}
+
+.categories_textBanquet__3mNxg {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    top: 91%;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.categories_imgCupboard__s7RrK {
+    position: relative
+}
+
+.categories_textTable__aAYRj {
+    top: 30%
+}
+
+.categories_textKitchen__1hW-_, .categories_textTable__aAYRj {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.categories_textKitchen__1hW-_ {
+    top: 55%
+}
+
+.categories_textChairs__2hNV3 {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    top: 91%;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.categories_buttonConsultation___Jy4s {
+    background: none
+}
+
+.categories_buttonConsultation___Jy4s, .categories_buttonConsultation___Jy4s:hover {
+    width: 306px;
+    height: 50px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.categories_buttonConsultation___Jy4s:hover {
+    background: #000;
+    color: #fff
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .categories_textSofa__fikZc {
+        top: 19%
+    }
+
+    .categories_textCupboard__2SmPg, .categories_textSofa__fikZc {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .categories_textCupboard__2SmPg {
+        top: 67%
+    }
+
+    .categories_textBanquet__3mNxg {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 91.5%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .categories_imgCupboard__s7RrK {
+        position: relative
+    }
+
+    .categories_textTable__aAYRj {
+        top: 30%
+    }
+
+    .categories_textKitchen__1hW-_, .categories_textTable__aAYRj {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .categories_textKitchen__1hW-_ {
+        top: 55%
+    }
+
+    .categories_textChairs__2hNV3 {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 91.5%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+}
+
+@media (min-width: 552px) and (max-width: 1000px) {
+    .categories_backCategories__2SpdT {
+        background-image: none;
+        background-color: #ebebeb
+    }
+
+    .categories_imgSofa__1L9LD {
+        position: relative
+    }
+
+    .categories_textSofa__fikZc {
+        top: 18.5%
+    }
+
+    .categories_textCupboard__2SmPg, .categories_textSofa__fikZc {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .categories_textCupboard__2SmPg {
+        top: 64.5%
+    }
+
+    .categories_textBanquet__3mNxg {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 89.5%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .categories_imgCupboard__s7RrK {
+        position: relative
+    }
+
+    .categories_textTable__aAYRj {
+        top: 28%
+    }
+
+    .categories_textKitchen__1hW-_, .categories_textTable__aAYRj {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .categories_textKitchen__1hW-_ {
+        top: 54%
+    }
+
+    .categories_textChairs__2hNV3 {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 89.5%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .categories_buttonConsultation___Jy4s {
+        background: none;
+        color: #fff;
+        background: #242424
+    }
+
+    .categories_buttonConsultation___Jy4s, .categories_buttonConsultation___Jy4s:hover {
+        padding: 4px 0;
+        width: 206px;
+        height: 40px;
+        font-size: .75rem;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        font-weight: 400
+    }
+
+    .categories_buttonConsultation___Jy4s:hover {
+        color: #242424;
+        background: none
+    }
+
+    .categories_h2TextConsultation__8OS8H {
+        font-size: 2.5rem;
+        font-weight: 700
+    }
+
+    .categories_h2Text__hxiIv {
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width: 551px) {
+    .categories_h2Text__hxiIv {
+        font-size: 1.875rem
+    }
+
+    .categories_backCategories__2SpdT {
+        background-image: none;
+        background-color: #ebebeb
+    }
+
+    .categories_imgSofa__1L9LD {
+        font-family: "Gilroy Regular", sans-serif;
+        position: relative
+    }
+
+    .categories_textSofa__fikZc {
+        top: 10%
+    }
+
+    .categories_textCupboard__2SmPg, .categories_textSofa__fikZc {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .categories_textCupboard__2SmPg {
+        top: 42%
+    }
+
+    .categories_textBanquet__3mNxg {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        top: 59%;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .categories_imgCupboard__s7RrK {
+        position: relative
+    }
+
+    .categories_textBed__11K4r, .categories_textTable__aAYRj {
+        top: 93%
+    }
+
+    .categories_textBed__11K4r, .categories_textKitchen__1hW-_, .categories_textTable__aAYRj {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .categories_textKitchen__1hW-_ {
+        top: 76%
+    }
+
+    .categories_textChairs__2hNV3 {
+        top: 68%
+    }
+
+    .categories_textChair__b7SfZ, .categories_textChairs__2hNV3 {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .categories_textChair__b7SfZ {
+        top: 42%
+    }
+
+    .categories_textCommode__1q5Om {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        top: 17%;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .categories_buttonConsultation___Jy4s {
+        background: none;
+        color: #fff;
+        background: #242424
+    }
+
+    .categories_buttonConsultation___Jy4s, .categories_buttonConsultation___Jy4s:hover {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        width: 162px;
+        height: 30px;
+        font-size: .625rem;
+        border: 1px solid #000;
+        text-transform: uppercase
+    }
+
+    .categories_buttonConsultation___Jy4s:hover {
+        color: #242424;
+        background: none
+    }
+
+    .categories_h2TextConsultation__8OS8H {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        font-size: 1.875rem
+    }
+
+    .categories_textConsultation__2EvEC {
+        font-family: "Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .875rem
+    }
+}
+
+.popular_h2Text__cMHsk {
+    font-weight: 500;
+    font-size: 3.125rem;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-style: normal
+}
+
+.popular_textPrice__103Zz {
+    display: grid;
+    align-content: space-between;
+    font-weight: 700
+}
+
+.popular_textName__ztY_B, .popular_textPrice__103Zz {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1.25rem;
+    padding: 0 16px
+}
+
+.popular_textName__ztY_B {
+    min-height: 69px
+}
+
+.popular_textNumber__3sQGl {
+    display: block;
+    width: 100%;
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1.25rem;
+    background: none;
+    padding: 0
+}
+
+.popular_textSale__2pnUA {
+    text-decoration: line-through;
+    font-size: 1rem;
+    opacity: .8;
+    padding: 0 16px
+}
+
+.popular_buttonWueAll__2PODn, .popular_buttonWueAll__2PODn:hover {
+    all: unset;
+    width: 196px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.popular_buttonWueAll__2PODn {
+    background: #2b2a29;
+    color: #fff;
+    border: 1px solid #2b2a29
+}
+
+.popular_buttonWueAll__2PODn:hover {
+    cursor: pointer;
+    background: none;
+    color: #242424;
+    border: 1px solid #000
+}
+
+.popular_buttonLastWorks__2RbYB {
+    background: none;
+    color: #242424;
+    border: 1px solid #000
+}
+
+.popular_buttonLastWorks__2RbYB, .popular_buttonLastWorks__2RbYB:hover {
+    width: 196px;
+    height: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+.popular_buttonLastWorks__2RbYB:hover {
+    all: unset;
+    cursor: pointer;
+    background: #2b2a29;
+    color: #fff
+}
+
+.popular_spanNumber__Y0kBW {
+    display: none;
+    background: none;
+    padding: 0
+}
+
+@media (max-width: 550px) {
+    .popular_h2Text__cMHsk {
+        font-weight: 400;
+        font-size: 1.875rem;
+        font-family: "Cormorant Garamond", sans-serif;
+        font-style: normal;
+        margin-top: -26px
+    }
+
+    .popular_textPrice__103Zz {
+        font-style: normal;
+        font-weight: 600;
+        margin-top: -10px
+    }
+
+    .popular_textName__ztY_B, .popular_textPrice__103Zz {
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: .875rem
+    }
+
+    .popular_textName__ztY_B {
+        min-height: 57px
+    }
+
+    .popular_textNumber__3sQGl {
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: .875rem
+    }
+
+    .popular_textSale__2pnUA {
+        display: none;
+        text-decoration: line-through;
+        font-size: 1rem;
+        opacity: .8
+    }
+
+    .popular_buttonWueAll__2PODn, .popular_buttonWueAll__2PODn:hover {
+        all: unset;
+        cursor: pointer;
+        width: 162px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: .625rem
+    }
+
+    .popular_buttonWueAll__2PODn {
+        background: #2b2a29;
+        color: #fff;
+        border: 1px solid #2b2a29
+    }
+
+    .popular_buttonWueAll__2PODn:hover {
+        background: none;
+        color: #242424;
+        border: 0 solid #000
+    }
+
+    .popular_buttonLastWorks__2RbYB {
+        background: none;
+        color: #242424;
+        border: 1px solid #000
+    }
+
+    .popular_buttonLastWorks__2RbYB, .popular_buttonLastWorks__2RbYB:hover {
+        width: 162px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: .625em
+    }
+
+    .popular_buttonLastWorks__2RbYB:hover {
+        border: 0 solid #000;
+        background: #2b2a29;
+        color: #fff
+    }
+
+    .popular_spanNumber__Y0kBW {
+        display: none;
+        background: none;
+        padding: 0
+    }
+}
+
+@media (min-width: 551px)and (max-width: 1000px) {
+    .popular_h2Text__cMHsk {
+        font-weight: 400;
+        font-size: 2.5rem;
+        font-family: "Cormorant Garamond", sans-serif;
+        font-style: normal
+    }
+
+    .popular_textName__ztY_B {
+        font-family: "Gilroy Regular", sans-serif;
+        background: none;
+        min-height: 30px
+    }
+
+    .popular_textSale__2pnUA {
+        display: none;
+        text-decoration: line-through;
+        font-size: 1rem;
+        opacity: .8
+    }
+
+    .popular_textPrice__103Zz {
+        font-family: "Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 2rem
+    }
+
+    .popular_textNumber__3sQGl {
+        font-family: "Gilroy Regular", sans-serif;
+        display: none
+    }
+
+    .popular_spanNumber__Y0kBW {
+        display: unset;
+        background: none;
+        padding: 0
+    }
+}
+
+.furniture_imgHover__198cm {
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 16px;
+    height: 34.5%;
+    top: 22px;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverChairs__2uDp5 {
+    opacity: 0
+}
+
+.furniture_imgHoverChairs__2uDp5, .furniture_imgHoverChairs__2uDp5:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverChairs__2uDp5:hover {
+    opacity: 1
+}
+
+.furniture_imgHoverKitchen__HFMkC {
+    opacity: 0;
+    width: 92%;
+    height: 22.2%
+}
+
+.furniture_imgHoverKitchen__HFMkC, .furniture_imgHoverKitchen__HFMkC:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    left: 15px;
+    top: 39%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverKitchen__HFMkC:hover {
+    opacity: 1;
+    width: 92.2%;
+    height: 22%
+}
+
+.furniture_imgHoverTable__228fj {
+    opacity: 0
+}
+
+.furniture_imgHoverTable__228fj, .furniture_imgHoverTable__228fj:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.3%;
+    top: 2.4%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverTable__228fj:hover {
+    opacity: 1
+}
+
+.furniture_imgHoverBanquet__3kVB6 {
+    opacity: 0
+}
+
+.furniture_imgHoverBanquet__3kVB6, .furniture_imgHoverBanquet__3kVB6:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92%;
+    left: 15px;
+    height: 22.2%;
+    top: 75.45%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverBanquet__3kVB6:hover {
+    opacity: 1
+}
+
+.furniture_imgHoverBed__y1Hxg {
+    opacity: 0;
+    width: 92%;
+    height: 22.2%
+}
+
+.furniture_imgHoverBed__y1Hxg, .furniture_imgHoverBed__y1Hxg:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    left: 15px;
+    top: 39%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverBed__y1Hxg:hover {
+    opacity: 1;
+    width: 92.1%;
+    height: 22%
+}
+
+.furniture_imgHoverCupboard__3rWEL {
+    opacity: 0
+}
+
+.furniture_imgHoverCupboard__3rWEL, .furniture_imgHoverCupboard__3rWEL:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 15px;
+    height: 46.4%;
+    top: 26.8%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverCupboard__3rWEL:hover {
+    opacity: 1
+}
+
+.furniture_imgHoverSofa__2gyFb {
+    opacity: 0
+}
+
+.furniture_imgHoverSofa__2gyFb, .furniture_imgHoverSofa__2gyFb:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 15px;
+    height: 22.2%;
+    top: 2.3%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverSofa__2gyFb:hover {
+    opacity: 1
+}
+
+.furniture_imgHoverArmchair__2RYv0 {
+    opacity: 0
+}
+
+.furniture_imgHoverArmchair__2RYv0, .furniture_imgHoverArmchair__2RYv0:hover {
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92.1%;
+    left: 15px;
+    height: 34.2%;
+    top: 63.5%;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_imgHoverArmchair__2RYv0:hover {
+    opacity: 1
+}
+
+.furniture_imgHover__198cm:hover {
+    opacity: 1;
+    transition: all .4s linear;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 92%;
+    left: 15px;
+    height: 34.2%;
+    top: 24px;
+    color: #fff;
+    text-align: center
+}
+
+.furniture_h3Hover__1qrYe {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500
+}
+
+.furniture_hrStyle__1O0s4 {
+    height: 2px;
+    width: 40%
+}
+
+.furniture_pTextHover__2UHkE {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1rem
+}
+
+.furniture_furnitureText__2uyHk {
+    opacity: .5;
+    font-weight: 400
+}
+
+.furniture_linkMain__bkaoK {
+    padding-top: 2px
+}
+
+.furniture_linkMain__bkaoK, .furniture_linkMain__bkaoK:hover {
+    font-family: "Gilroy Regular", sans-serif;
+    color: #2b2a29;
+    text-decoration: none;
+    font-weight: 400
+}
+
+.furniture_textConsultation__20_Fo {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400
+}
+
+.furniture_h2Text__2wFtW {
+    font-size: 2.5rem;
+    font-weight: 500
+}
+
+.furniture_h2TextConsultation__2RzwY {
+    font-size: 3.125rem;
+    font-weight: 700
+}
+
+.furniture_imgSofa__3bYjw {
+    position: relative
+}
+
+.furniture_textSofa__1AGjg {
+    top: 19%
+}
+
+.furniture_textCupboard__1xhkw, .furniture_textSofa__1AGjg {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.furniture_textCupboard__1xhkw {
+    top: 68%
+}
+
+.furniture_textBanquet__DUoQs {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.furniture_imgCupboard__3zCB8 {
+    position: relative
+}
+
+.furniture_textComm__MA1tn, .furniture_textTable__3d-9f {
+    top: 31%
+}
+
+.furniture_textComm__MA1tn, .furniture_textKitchen__25bfh, .furniture_textTable__3d-9f {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.furniture_textKitchen__25bfh {
+    top: 56%
+}
+
+.furniture_textChairs__3udpB {
+    font-family: "Gilroy Regular", sans-serif;
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
+    font-size: 1.875rem;
+    font-weight: 500
+}
+
+.furniture_buttonConsultation__350mB {
+    width: 306px;
+    height: 50px;
+    border: 1px solid #000;
+    text-transform: uppercase;
+    background: none;
+    font-weight: 400;
+    font-size: 1rem
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .furniture_imgHover__198cm {
+        opacity: 0;
+        width: 92%;
+        left: 16px;
+        height: 34.5%;
+        top: 22px
+    }
+
+    .furniture_imgHover__198cm, .furniture_imgHover__198cm:hover {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .5);
+        color: #fff;
+        text-align: center
+    }
+
+    .furniture_imgHover__198cm:hover {
+        opacity: 1;
+        transition: all .4s linear;
+        width: 91%;
+        left: 15px;
+        height: 33.5%;
+        top: 24px
+    }
+
+    .furniture_h3Hover__1qrYe {
+        font-family: "Gilroy Regular", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        padding-top: 5rem
+    }
+
+    .furniture_textSofa__1AGjg {
+        top: 19%
+    }
+
+    .furniture_textComm__MA1tn, .furniture_textSofa__1AGjg {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .furniture_textComm__MA1tn {
+        top: 31%
+    }
+
+    .furniture_textCupboard__1xhkw {
+        top: 68%
+    }
+
+    .furniture_textBanquet__DUoQs, .furniture_textCupboard__1xhkw {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .furniture_textBanquet__DUoQs {
+        top: 92%
+    }
+
+    .furniture_imgCupboard__3zCB8 {
+        position: relative
+    }
+
+    .furniture_textTable__3d-9f {
+        top: 31%
+    }
+
+    .furniture_textKitchen__25bfh, .furniture_textTable__3d-9f {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+
+    .furniture_textKitchen__25bfh {
+        top: 56%
+    }
+
+    .furniture_textChairs__3udpB {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 92%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1.5rem;
+        font-weight: 500
+    }
+}
+
+@media (min-width: 552px) and (max-width: 1000px) {
+    .furniture_backCategories__19zYH {
+        background-image: none;
+        background-color: #ebebeb
+    }
+
+    .furniture_imgSofa__3bYjw {
+        position: relative
+    }
+
+    .furniture_textSofa__1AGjg {
+        top: 18%
+    }
+
+    .furniture_textCupboard__1xhkw, .furniture_textSofa__1AGjg {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .furniture_textCupboard__1xhkw {
+        top: 64%
+    }
+
+    .furniture_textBanquet__DUoQs {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 89%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .furniture_imgCupboard__3zCB8 {
+        position: relative
+    }
+
+    .furniture_textComm__MA1tn, .furniture_textTable__3d-9f {
+        top: 28%
+    }
+
+    .furniture_textComm__MA1tn, .furniture_textKitchen__25bfh, .furniture_textTable__3d-9f {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .furniture_textKitchen__25bfh {
+        top: 54%
+    }
+
+    .furniture_textChairs__3udpB {
+        font-family: "Gilroy Regular", sans-serif;
+        position: absolute;
+        top: 89%;
+        left: 10%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: 1rem
+    }
+
+    .furniture_buttonConsultation__350mB {
+        padding: 4px 0;
+        width: 206px;
+        height: 40px;
+        font-size: .75rem;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        background: none;
+        color: #fff;
+        background: #242424;
+        font-weight: 400
+    }
+
+    .furniture_h2TextConsultation__2RzwY {
+        font-size: 2.5rem;
+        font-weight: 700
+    }
+
+    .furniture_h2Text__2wFtW {
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width: 551px) {
+    .furniture_h2Text__2wFtW {
+        font-size: 1.875rem
+    }
+
+    .furniture_backCategories__19zYH {
+        background-image: none;
+        background-color: #ebebeb
+    }
+
+    .furniture_imgSofa__3bYjw {
+        font-family: "Gilroy Regular", sans-serif;
+        position: relative
+    }
+
+    .furniture_textSofa__1AGjg {
+        top: 10%
+    }
+
+    .furniture_textCupboard__1xhkw, .furniture_textSofa__1AGjg {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .furniture_textCupboard__1xhkw {
+        top: 42%
+    }
+
+    .furniture_textBanquet__DUoQs {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        top: 59%;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .furniture_imgCupboard__3zCB8 {
+        position: relative
+    }
+
+    .furniture_textBed__3B7el, .furniture_textTable__3d-9f {
+        top: 93%
+    }
+
+    .furniture_textBed__3B7el, .furniture_textKitchen__25bfh, .furniture_textTable__3d-9f {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .furniture_textKitchen__25bfh {
+        top: 76%
+    }
+
+    .furniture_textChairs__3udpB {
+        top: 68%
+    }
+
+    .furniture_textChair__szW8H, .furniture_textChairs__3udpB {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .furniture_textChair__szW8H {
+        top: 42%
+    }
+
+    .furniture_textCommode__29pTm {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        position: absolute;
+        top: 17%;
+        left: 13%;
+        color: #fff;
+        background: rgba(0, 0, 0, .5);
+        font-size: .688rem
+    }
+
+    .furniture_buttonConsultation__350mB {
+        font-family: "Gilroy Regular", sans-serif;
+        padding: 4px 0;
+        width: 162px;
+        height: 30px;
+        font-size: .625rem;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        background: none;
+        color: #fff;
+        background: #242424
+    }
+
+    .furniture_h2TextConsultation__2RzwY {
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%;
+        font-size: 1.875rem
+    }
+
+    .furniture_textConsultation__20_Fo {
+        font-family: "Gilroy Regular", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: .875rem
+    }
+}
+
+.furniture_blockHover__1Z3lr:hover .furniture_textBanquet__DUoQs, .furniture_blockHover__1Z3lr:hover .furniture_textBed__3B7el, .furniture_blockHover__1Z3lr:hover .furniture_textChair__szW8H, .furniture_blockHover__1Z3lr:hover .furniture_textChairs__3udpB, .furniture_blockHover__1Z3lr:hover .furniture_textComm__MA1tn, .furniture_blockHover__1Z3lr:hover .furniture_textCommode__29pTm, .furniture_blockHover__1Z3lr:hover .furniture_textCupboard__1xhkw, .furniture_blockHover__1Z3lr:hover .furniture_textKitchen__25bfh, .furniture_blockHover__1Z3lr:hover .furniture_textSofa__1AGjg, .furniture_blockHover__1Z3lr:hover .furniture_textTable__3d-9f {
+    opacity: 0
+}
+
+.aboutUs_imgBedWidth__JeGRM {
+    width: 103.37%
+}
+
+.aboutUs_imgChairsWidth__WWviA {
+    width: 97.4%;
+    margin-left: 3%
+}
+
+.aboutUs_h3text__15Ijv {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: normal
+}
+
+.aboutUs_textAbout__2u5-Q {
+    font-size: 1rem;
+    font-family: "Gilroy Regular", sans-serif;
+    color: #242424
+}
+
+.aboutUs_spanP__1oLXg {
+    font-size: 1rem;
+    font-family: "Gilroy Medium", sans-serif;
+    color: #242424;
+    width: 115%;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 20.8px
+}
+
+@media (min-width: 1354px) {
+    .aboutUs_spanP__1oLXg {
+        font-size: 1rem;
+        font-family: "Gilroy Medium", sans-serif;
+        color: #242424;
+        text-align: justify;
+        font-weight: 400;
+        line-height: 20.8px
+    }
+}
+
+.design_imgSize__nStTb {
+    width: 99%
+}
+
+.design_background__3bSSj {
+    background-color: #ebebeb;
+    background-image: url('../media/image 72.0efe3005.svg');
+    height: 172px
+}
+
+.design_texth2__2lZDL {
+    font-weight: 500;
+    font-size: 2.5rem
+}
+
+.design_boldText__IQspe {
+    font-family: "Gilroy Regular", sans-serif;
+    font-weight: 600;
+    background: none;
+    padding: 0
+}
+
+.design_texth3__2zkyB {
+    font-size: 2.188rem;
+    font-style: normal;
+    font-weight: 500
+}
+
+.design_parText__3fwCP {
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.625rem;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-underline-offset: 4px
+}
+
+.design_textp__DTpih {
+    font-family: "Gilroy Medium", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem
+}
+
+.design_liStyle__1XOeB {
+    list-style-type: georgian
+}
+
+.design_hrLine__qF9-Y {
+    width: 196px;
+    color: #2b2a29;
+    border-top: 1px solid #000
+}
+
+.design_backgroundProjects__1NIlr {
+    width: 99%;
+    background: #fff;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .25)
+}
+
+.design_h2Projects__3-RG7 {
+    font-weight: 400
+}
+
+.design_boldTextProjects__2b7DV, .design_h2Projects__3-RG7 {
+    font-family: "Gilroy Regular", sans-serif;
+    font-size: 1.625rem;
+    line-height: 36.4px
+}
+
+.design_boldTextProjects__2b7DV {
+    font-weight: 600;
+    background: none;
+    padding: 0
+}
+
+.design_textProjects__1-9wz {
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%
+}
+
+.design_textLiProjects__2Rm19 {
+    padding-left: 20px
+}
+
+.design_pUnderline__1LK3c, .design_textLiProjects__2Rm19 {
+    font-family: "Gilroy Regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%
+}
+
+.design_pUnderline__1LK3c {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-underline-offset: 3px
+}
+
+/*# sourceMappingURL=main.147fc4dc.chunk.css.map */

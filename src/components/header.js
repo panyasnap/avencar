@@ -71,7 +71,8 @@ const Header = () => {
                     <div className={page === 'main' ? `${style.linkHover} ml-5 ` : ' pb-3 ml-5'}>
                         <Link onClick={() => setPage('main')}
                               className={showInput ? `${style.linkStyleDark}` : `${style.linkStyle}`}
-                              to={`/${mainPage}`}>
+                              to={`/${mainPage}`
+                              }>
                             Главная</Link>
                         {/*<hr className={page === 'main' ? `${style.hrStyleClick}  p-0 mt-0` : `${style.hrStyle} p-0 mt-0`}/>*/}
                     </div>

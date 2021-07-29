@@ -17,7 +17,7 @@ const ChangePage = () => {
             <Route exact path={`/${aboutUs}`} render={() => <AboutUs/> }/>
             <Route exact path={`/${design}`} render={() => <Design/> }/>
             <Route>
-                <h1>Error</h1>
+                <MainPage/>
             </Route>
         </Switch>
     );
